@@ -1,0 +1,74 @@
+COGNISTREAM DATA QUALITY REPORT
+========================================
+
+Dataset: cognistream_developer_activity_1000_rows.csv
+Number of rows: 1000
+Number of columns: 12
+Duplicate rows: 0
+
+1. MISSING VALUES
+----------------------------------------
+event_id: 0 missing (0.00%)
+developer_id: 0 missing (0.00%)
+team: 0 missing (0.00%)
+event_timestamp: 0 missing (0.00%)
+activity_type: 0 missing (0.00%)
+application: 0 missing (0.00%)
+project_name: 0 missing (0.00%)
+duration_minutes: 0 missing (0.00%)
+interruption_flag: 0 missing (0.00%)
+flow_state_proxy: 0 missing (0.00%)
+context_switch_flag: 0 missing (0.00%)
+data_source: 0 missing (0.00%)
+
+2. DATA TYPES
+----------------------------------------
+event_id: int64
+developer_id: str
+team: str
+event_timestamp: str
+activity_type: str
+application: str
+project_name: str
+duration_minutes: int64
+interruption_flag: int64
+flow_state_proxy: int64
+context_switch_flag: int64
+data_source: str
+
+3. DUPLICATE EVENT IDs
+----------------------------------------
+Duplicate event_id values: 0
+
+4. NUMERICAL SUMMARY
+----------------------------------------
+          event_id  duration_minutes  interruption_flag  flow_state_proxy  context_switch_flag
+count  1000.000000       1000.000000        1000.000000       1000.000000          1000.000000
+mean    500.500000         43.317000           0.123000          0.315000             0.035000
+std     288.819436         31.825452           0.328602          0.464748             0.183872
+min       1.000000          1.000000           0.000000          0.000000             0.000000
+25%     250.750000         19.000000           0.000000          0.000000             0.000000
+50%     500.500000         35.500000           0.000000          0.000000             0.000000
+75%     750.250000         64.000000           0.000000          1.000000             0.000000
+max    1000.000000        120.000000           1.000000          1.000000             1.000000
+
+5. CATEGORICAL SUMMARY
+----------------------------------------
+developer_id: 20 unique values
+  Most common values: {'D016': 62, 'D007': 61, 'D017': 57, 'D013': 55, 'D002': 54}
+team: 6 unique values
+  Most common values: {'Platform': 209, 'Frontend': 200, 'Backend': 191, 'QA': 151, 'Data': 130}
+event_timestamp: 1000 unique values
+  Most common values: {'2025-01-01 12:16:57': 1, '2025-01-01 12:24:41': 1, '2025-01-01 13:28:42': 1, '2025-01-01 18:08:10': 1, '2025-01-01 23:53:15': 1}
+activity_type: 8 unique values
+  Most common values: {'coding': 362, 'testing': 124, 'code_review': 117, 'debugging': 110, 'notification': 109}
+application: 16 unique values
+  Most common values: {'VS Code': 207, 'PyCharm': 175, 'IntelliJ IDEA': 171, 'Microsoft Teams': 65, 'GitHub': 60}
+project_name: 5 unique values
+  Most common values: {'Analytics Platform': 221, 'Atlas API': 212, 'Data Pipeline': 191, 'Customer Portal': 188, 'Mobile App': 188}
+data_source: 1 unique values
+  Most common values: {'synthetic_simulation': 1000}
+
+6. END OF REPORT
+----------------------------------------
+This report describes the dataset; it does not modify it.
