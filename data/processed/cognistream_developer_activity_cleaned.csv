@@ -1,0 +1,1001 @@
+event_id,developer_id,team,event_timestamp,activity_type,application,project_name,duration_minutes,interruption_flag,flow_state_proxy,context_switch_flag,data_source
+1,D007,Frontend,2025-01-01 12:16:57,code_review,GitLab,Atlas API,27,0,0,0,synthetic_simulation
+2,D015,QA,2025-01-01 12:24:41,coding,IntelliJ IDEA,Analytics Platform,88,0,1,0,synthetic_simulation
+3,D004,Data,2025-01-01 13:28:42,debugging,VS Code,Atlas API,33,0,0,0,synthetic_simulation
+4,D020,Frontend,2025-01-01 18:08:10,code_review,GitLab,Data Pipeline,27,0,0,0,synthetic_simulation
+5,D019,Backend,2025-01-01 23:53:15,code_review,GitHub,Analytics Platform,44,0,0,0,synthetic_simulation
+6,D017,Analytics,2025-01-03 12:07:17,code_review,GitHub,Customer Portal,45,0,0,0,synthetic_simulation
+7,D005,Data,2025-01-03 14:21:05,notification,Email,Atlas API,3,1,0,0,synthetic_simulation
+8,D003,Platform,2025-01-05 10:17:06,testing,Terminal,Customer Portal,10,0,0,0,synthetic_simulation
+9,D020,Frontend,2025-01-06 09:55:45,testing,VS Code,Analytics Platform,42,0,0,0,synthetic_simulation
+10,D017,Analytics,2025-01-06 10:21:43,break,Away/Idle,Atlas API,14,0,0,0,synthetic_simulation
+11,D016,Analytics,2025-01-06 18:23:22,meeting,Microsoft Teams,Atlas API,48,0,0,0,synthetic_simulation
+12,D018,Platform,2025-01-07 12:29:42,meeting,Microsoft Teams,Customer Portal,64,0,0,0,synthetic_simulation
+13,D003,Platform,2025-01-07 15:05:21,meeting,Google Meet,Analytics Platform,75,1,0,0,synthetic_simulation
+14,D002,Platform,2025-01-08 13:00:12,coding,IntelliJ IDEA,Atlas API,94,0,1,0,synthetic_simulation
+15,D011,Backend,2025-01-08 13:03:17,coding,IntelliJ IDEA,Atlas API,19,0,0,0,synthetic_simulation
+16,D010,Backend,2025-01-08 15:40:31,debugging,VS Code,Analytics Platform,23,0,0,0,synthetic_simulation
+17,D002,Platform,2025-01-08 16:40:36,notification,Slack,Mobile App,6,1,0,0,synthetic_simulation
+18,D017,Analytics,2025-01-09 12:30:25,meeting,Microsoft Teams,Mobile App,83,1,0,0,synthetic_simulation
+19,D016,Analytics,2025-01-09 12:54:42,coding,IntelliJ IDEA,Mobile App,68,0,1,0,synthetic_simulation
+20,D017,Analytics,2025-01-09 14:07:43,notification,Slack,Atlas API,7,1,0,0,synthetic_simulation
+21,D016,Analytics,2025-01-09 14:11:15,meeting,Google Meet,Customer Portal,47,1,0,0,synthetic_simulation
+22,D007,Frontend,2025-01-10 18:30:32,notification,Email,Atlas API,7,1,0,0,synthetic_simulation
+23,D005,Data,2025-01-11 11:43:44,coding,IntelliJ IDEA,Atlas API,108,0,1,0,synthetic_simulation
+24,D010,Backend,2025-01-11 13:34:53,code_review,GitLab,Customer Portal,19,0,0,0,synthetic_simulation
+25,D002,Platform,2025-01-13 08:36:49,debugging,VS Code,Data Pipeline,26,0,0,0,synthetic_simulation
+26,D012,Backend,2025-01-13 09:17:37,coding,IntelliJ IDEA,Mobile App,92,0,1,0,synthetic_simulation
+27,D007,Frontend,2025-01-13 12:33:05,documentation,Confluence,Analytics Platform,21,0,0,0,synthetic_simulation
+28,D003,Platform,2025-01-13 13:17:34,code_review,GitHub,Customer Portal,11,0,0,0,synthetic_simulation
+29,D007,Frontend,2025-01-13 13:24:34,code_review,GitHub,Analytics Platform,32,0,0,0,synthetic_simulation
+30,D012,Backend,2025-01-13 13:45:24,coding,IntelliJ IDEA,Customer Portal,26,0,0,0,synthetic_simulation
+31,D014,QA,2025-01-13 14:59:52,testing,Terminal,Mobile App,33,0,0,0,synthetic_simulation
+32,D006,Data,2025-01-14 10:14:53,testing,Terminal,Mobile App,21,0,0,0,synthetic_simulation
+33,D015,QA,2025-01-14 12:45:56,break,Away/Idle,Analytics Platform,5,0,0,0,synthetic_simulation
+34,D009,Frontend,2025-01-14 13:43:53,notification,Email,Mobile App,8,1,0,0,synthetic_simulation
+35,D016,Analytics,2025-01-14 14:49:46,testing,PyCharm,Atlas API,59,0,0,0,synthetic_simulation
+36,D001,Platform,2025-01-15 11:15:07,coding,VS Code,Customer Portal,31,0,0,0,synthetic_simulation
+37,D002,Platform,2025-01-15 11:37:07,debugging,IntelliJ IDEA,Analytics Platform,63,0,1,0,synthetic_simulation
+38,D018,Platform,2025-01-15 12:31:30,documentation,Notion,Customer Portal,14,0,0,0,synthetic_simulation
+39,D009,Frontend,2025-01-15 13:25:29,coding,PyCharm,Atlas API,87,0,1,0,synthetic_simulation
+40,D016,Analytics,2025-01-15 13:30:51,debugging,IntelliJ IDEA,Mobile App,38,0,0,0,synthetic_simulation
+41,D018,Platform,2025-01-16 09:32:52,coding,PyCharm,Mobile App,107,0,1,0,synthetic_simulation
+42,D017,Analytics,2025-01-16 11:55:33,coding,VS Code,Data Pipeline,36,0,0,0,synthetic_simulation
+43,D004,Data,2025-01-16 13:22:38,debugging,IntelliJ IDEA,Mobile App,36,0,0,0,synthetic_simulation
+44,D008,Frontend,2025-01-16 13:53:08,debugging,VS Code,Customer Portal,39,0,0,0,synthetic_simulation
+45,D004,Data,2025-01-17 11:15:00,notification,Microsoft Teams,Customer Portal,3,1,0,0,synthetic_simulation
+46,D005,Data,2025-01-17 12:31:42,coding,VS Code,Analytics Platform,114,0,1,0,synthetic_simulation
+47,D002,Platform,2025-01-17 12:33:05,coding,IntelliJ IDEA,Atlas API,68,0,1,0,synthetic_simulation
+48,D020,Frontend,2025-01-17 14:50:31,debugging,IntelliJ IDEA,Mobile App,72,0,1,0,synthetic_simulation
+49,D006,Data,2025-01-17 15:13:29,code_review,GitLab,Analytics Platform,34,0,0,0,synthetic_simulation
+50,D020,Frontend,2025-01-17 16:20:44,coding,PyCharm,Analytics Platform,83,0,1,0,synthetic_simulation
+51,D013,QA,2025-01-20 09:40:45,meeting,Zoom,Mobile App,65,1,0,0,synthetic_simulation
+52,D011,Backend,2025-01-20 10:07:35,notification,Email,Analytics Platform,5,1,0,0,synthetic_simulation
+53,D013,QA,2025-01-20 10:37:48,coding,IntelliJ IDEA,Customer Portal,54,0,1,0,synthetic_simulation
+54,D002,Platform,2025-01-20 10:58:50,debugging,IntelliJ IDEA,Customer Portal,19,0,0,0,synthetic_simulation
+55,D019,Backend,2025-01-20 11:35:50,coding,IntelliJ IDEA,Analytics Platform,96,0,1,0,synthetic_simulation
+56,D011,Backend,2025-01-20 13:15:20,meeting,Google Meet,Data Pipeline,55,0,0,0,synthetic_simulation
+57,D002,Platform,2025-01-21 09:48:10,coding,IntelliJ IDEA,Analytics Platform,32,0,0,0,synthetic_simulation
+58,D011,Backend,2025-01-21 12:14:07,coding,IntelliJ IDEA,Atlas API,24,0,0,0,synthetic_simulation
+59,D015,QA,2025-01-22 12:22:10,code_review,GitHub,Customer Portal,43,0,0,0,synthetic_simulation
+60,D005,Data,2025-01-22 15:15:54,meeting,Microsoft Teams,Analytics Platform,65,0,0,0,synthetic_simulation
+61,D012,Backend,2025-01-22 16:34:04,coding,IntelliJ IDEA,Mobile App,57,0,1,0,synthetic_simulation
+62,D002,Platform,2025-01-23 12:58:34,debugging,VS Code,Data Pipeline,19,0,0,0,synthetic_simulation
+63,D009,Frontend,2025-01-24 09:21:39,coding,PyCharm,Data Pipeline,98,0,1,0,synthetic_simulation
+64,D015,QA,2025-01-24 11:23:19,coding,VS Code,Data Pipeline,19,0,0,0,synthetic_simulation
+65,D018,Platform,2025-01-24 11:24:28,testing,Terminal,Atlas API,32,0,0,0,synthetic_simulation
+66,D008,Frontend,2025-01-24 13:07:43,testing,VS Code,Analytics Platform,14,0,0,0,synthetic_simulation
+67,D020,Frontend,2025-01-24 14:02:30,notification,Email,Atlas API,7,1,0,0,synthetic_simulation
+68,D002,Platform,2025-01-24 14:07:53,coding,IntelliJ IDEA,Atlas API,79,0,1,0,synthetic_simulation
+69,D001,Platform,2025-01-24 19:54:26,coding,IntelliJ IDEA,Analytics Platform,46,0,1,0,synthetic_simulation
+70,D017,Analytics,2025-01-27 10:19:52,coding,IntelliJ IDEA,Data Pipeline,47,0,1,0,synthetic_simulation
+71,D009,Frontend,2025-01-27 10:39:21,coding,VS Code,Atlas API,57,0,1,0,synthetic_simulation
+72,D013,QA,2025-01-27 12:31:58,coding,IntelliJ IDEA,Mobile App,103,0,1,0,synthetic_simulation
+73,D013,QA,2025-01-27 19:59:11,notification,Email,Customer Portal,4,1,0,1,synthetic_simulation
+74,D005,Data,2025-01-28 12:40:40,coding,VS Code,Analytics Platform,55,0,1,0,synthetic_simulation
+75,D013,QA,2025-01-28 12:43:03,code_review,GitHub,Analytics Platform,15,0,0,0,synthetic_simulation
+76,D005,Data,2025-01-29 14:05:29,coding,IntelliJ IDEA,Customer Portal,82,0,1,0,synthetic_simulation
+77,D019,Backend,2025-01-29 15:56:19,documentation,Browser,Atlas API,6,0,0,0,synthetic_simulation
+78,D015,QA,2025-01-30 08:33:01,testing,VS Code,Mobile App,53,0,0,0,synthetic_simulation
+79,D002,Platform,2025-01-30 09:20:53,notification,Slack,Data Pipeline,4,1,0,0,synthetic_simulation
+80,D017,Analytics,2025-01-30 09:58:01,meeting,Microsoft Teams,Atlas API,75,0,0,0,synthetic_simulation
+81,D012,Backend,2025-01-30 13:21:33,testing,Terminal,Data Pipeline,32,0,0,0,synthetic_simulation
+82,D008,Frontend,2025-01-30 14:11:31,debugging,VS Code,Analytics Platform,23,0,0,0,synthetic_simulation
+83,D012,Backend,2025-01-30 16:13:10,testing,VS Code,Mobile App,9,0,0,0,synthetic_simulation
+84,D014,QA,2025-01-31 12:12:50,testing,VS Code,Mobile App,9,0,0,0,synthetic_simulation
+85,D019,Backend,2025-01-31 12:40:21,code_review,GitHub,Customer Portal,39,0,0,0,synthetic_simulation
+86,D009,Frontend,2025-01-31 13:57:09,notification,Slack,Analytics Platform,6,1,0,0,synthetic_simulation
+87,D005,Data,2025-01-31 15:04:11,debugging,PyCharm,Data Pipeline,63,0,1,0,synthetic_simulation
+88,D020,Frontend,2025-01-31 18:13:41,coding,VS Code,Customer Portal,107,0,1,0,synthetic_simulation
+89,D006,Data,2025-01-31 18:50:32,break,Away/Idle,Atlas API,12,0,0,0,synthetic_simulation
+90,D013,QA,2025-02-01 12:33:25,notification,Email,Atlas API,5,1,0,0,synthetic_simulation
+91,D006,Data,2025-02-03 13:37:58,testing,PyCharm,Customer Portal,60,0,0,0,synthetic_simulation
+92,D018,Platform,2025-02-03 14:16:58,coding,IntelliJ IDEA,Mobile App,17,0,0,0,synthetic_simulation
+93,D004,Data,2025-02-03 15:09:37,testing,Terminal,Customer Portal,25,0,0,0,synthetic_simulation
+94,D008,Frontend,2025-02-04 09:19:52,meeting,Zoom,Atlas API,20,0,0,0,synthetic_simulation
+95,D001,Platform,2025-02-04 10:47:42,coding,IntelliJ IDEA,Data Pipeline,109,0,1,0,synthetic_simulation
+96,D007,Frontend,2025-02-04 10:53:30,testing,VS Code,Atlas API,37,0,0,0,synthetic_simulation
+97,D010,Backend,2025-02-04 14:51:28,notification,Microsoft Teams,Atlas API,1,1,0,0,synthetic_simulation
+98,D019,Backend,2025-02-04 15:01:02,coding,PyCharm,Atlas API,103,0,1,0,synthetic_simulation
+99,D005,Data,2025-02-05 09:43:20,code_review,GitLab,Data Pipeline,24,0,0,0,synthetic_simulation
+100,D006,Data,2025-02-05 11:04:38,coding,PyCharm,Atlas API,116,0,1,0,synthetic_simulation
+101,D006,Data,2025-02-05 11:32:02,coding,PyCharm,Atlas API,101,0,1,0,synthetic_simulation
+102,D015,QA,2025-02-06 12:05:58,coding,PyCharm,Mobile App,107,0,1,0,synthetic_simulation
+103,D002,Platform,2025-02-07 13:02:22,coding,IntelliJ IDEA,Mobile App,27,0,0,0,synthetic_simulation
+104,D010,Backend,2025-02-07 18:17:45,code_review,GitHub,Mobile App,33,0,0,0,synthetic_simulation
+105,D010,Backend,2025-02-07 19:57:03,break,Calendar,Mobile App,21,0,0,1,synthetic_simulation
+106,D020,Frontend,2025-02-09 23:30:59,debugging,VS Code,Data Pipeline,21,0,0,0,synthetic_simulation
+107,D005,Data,2025-02-10 12:52:20,coding,IntelliJ IDEA,Data Pipeline,59,0,1,0,synthetic_simulation
+108,D011,Backend,2025-02-10 13:23:11,coding,VS Code,Customer Portal,77,0,1,0,synthetic_simulation
+109,D014,QA,2025-02-10 13:58:55,notification,Email,Analytics Platform,2,1,0,0,synthetic_simulation
+110,D008,Frontend,2025-02-10 20:41:00,coding,PyCharm,Analytics Platform,105,0,1,0,synthetic_simulation
+111,D005,Data,2025-02-11 09:13:13,meeting,Google Meet,Mobile App,79,0,0,0,synthetic_simulation
+112,D007,Frontend,2025-02-11 09:25:24,documentation,Confluence,Mobile App,24,0,0,0,synthetic_simulation
+113,D020,Frontend,2025-02-11 16:59:27,meeting,Google Meet,Mobile App,54,0,0,0,synthetic_simulation
+114,D020,Frontend,2025-02-11 20:37:24,coding,VS Code,Mobile App,91,0,1,1,synthetic_simulation
+115,D014,QA,2025-02-12 12:55:28,notification,Microsoft Teams,Customer Portal,7,1,0,0,synthetic_simulation
+116,D014,QA,2025-02-12 16:43:01,documentation,Browser,Customer Portal,36,0,0,1,synthetic_simulation
+117,D008,Frontend,2025-02-12 17:37:17,meeting,Zoom,Data Pipeline,86,0,0,0,synthetic_simulation
+118,D012,Backend,2025-02-12 22:23:12,coding,PyCharm,Customer Portal,26,0,0,0,synthetic_simulation
+119,D002,Platform,2025-02-13 08:44:47,debugging,VS Code,Mobile App,29,0,0,0,synthetic_simulation
+120,D013,QA,2025-02-13 15:10:01,coding,VS Code,Mobile App,68,0,1,0,synthetic_simulation
+121,D015,QA,2025-02-14 10:52:48,code_review,GitHub,Data Pipeline,29,0,0,0,synthetic_simulation
+122,D012,Backend,2025-02-14 11:03:27,debugging,IntelliJ IDEA,Analytics Platform,13,0,0,0,synthetic_simulation
+123,D001,Platform,2025-02-14 19:24:55,coding,PyCharm,Customer Portal,114,0,1,0,synthetic_simulation
+124,D007,Frontend,2025-02-17 12:28:15,testing,VS Code,Customer Portal,46,0,0,0,synthetic_simulation
+125,D009,Frontend,2025-02-17 21:41:57,break,Away/Idle,Atlas API,20,0,0,0,synthetic_simulation
+126,D004,Data,2025-02-17 22:10:30,meeting,Zoom,Analytics Platform,77,0,0,0,synthetic_simulation
+127,D001,Platform,2025-02-18 11:16:10,break,Away/Idle,Data Pipeline,20,0,0,0,synthetic_simulation
+128,D011,Backend,2025-02-18 11:21:09,coding,IntelliJ IDEA,Data Pipeline,63,0,1,0,synthetic_simulation
+129,D008,Frontend,2025-02-18 11:56:17,documentation,Notion,Atlas API,17,0,0,0,synthetic_simulation
+130,D001,Platform,2025-02-18 12:29:50,debugging,VS Code,Atlas API,32,0,0,0,synthetic_simulation
+131,D008,Frontend,2025-02-18 14:33:58,debugging,VS Code,Atlas API,45,0,1,0,synthetic_simulation
+132,D005,Data,2025-02-18 15:15:00,notification,Email,Data Pipeline,2,1,0,0,synthetic_simulation
+133,D013,QA,2025-02-18 15:32:53,coding,IntelliJ IDEA,Data Pipeline,73,0,1,0,synthetic_simulation
+134,D012,Backend,2025-02-18 16:48:44,coding,VS Code,Analytics Platform,73,0,1,0,synthetic_simulation
+135,D015,QA,2025-02-18 18:56:05,meeting,Zoom,Customer Portal,71,1,0,0,synthetic_simulation
+136,D017,Analytics,2025-02-19 07:59:34,coding,VS Code,Atlas API,29,0,0,0,synthetic_simulation
+137,D007,Frontend,2025-02-19 09:42:07,coding,IntelliJ IDEA,Analytics Platform,63,0,1,0,synthetic_simulation
+138,D015,QA,2025-02-19 11:21:57,code_review,GitLab,Mobile App,9,0,0,0,synthetic_simulation
+139,D011,Backend,2025-02-19 14:13:54,meeting,Google Meet,Data Pipeline,53,0,0,0,synthetic_simulation
+140,D007,Frontend,2025-02-19 14:30:59,code_review,GitHub,Analytics Platform,7,0,0,0,synthetic_simulation
+141,D007,Frontend,2025-02-20 23:29:41,break,Calendar,Analytics Platform,12,0,0,1,synthetic_simulation
+142,D020,Frontend,2025-02-21 09:47:00,coding,VS Code,Atlas API,116,0,1,0,synthetic_simulation
+143,D006,Data,2025-02-21 11:25:48,break,Away/Idle,Atlas API,8,0,0,0,synthetic_simulation
+144,D004,Data,2025-02-21 12:09:12,code_review,GitHub,Atlas API,12,0,0,0,synthetic_simulation
+145,D014,QA,2025-02-21 12:25:23,coding,PyCharm,Atlas API,118,0,1,0,synthetic_simulation
+146,D012,Backend,2025-02-24 11:37:33,code_review,GitHub,Analytics Platform,5,0,0,0,synthetic_simulation
+147,D003,Platform,2025-02-24 11:37:36,notification,Email,Analytics Platform,8,1,0,0,synthetic_simulation
+148,D012,Backend,2025-02-24 15:05:57,coding,VS Code,Data Pipeline,101,0,1,0,synthetic_simulation
+149,D015,QA,2025-02-25 10:39:15,notification,Slack,Mobile App,1,1,0,0,synthetic_simulation
+150,D003,Platform,2025-02-25 12:13:44,coding,VS Code,Atlas API,49,0,1,0,synthetic_simulation
+151,D001,Platform,2025-02-25 14:43:22,debugging,VS Code,Customer Portal,43,0,0,0,synthetic_simulation
+152,D001,Platform,2025-02-26 08:37:00,debugging,VS Code,Mobile App,72,0,1,0,synthetic_simulation
+153,D009,Frontend,2025-02-26 09:38:08,coding,PyCharm,Data Pipeline,81,0,1,0,synthetic_simulation
+154,D011,Backend,2025-02-26 13:31:17,break,Away/Idle,Data Pipeline,26,0,0,0,synthetic_simulation
+155,D004,Data,2025-02-26 17:43:20,testing,VS Code,Customer Portal,9,0,0,0,synthetic_simulation
+156,D019,Backend,2025-02-26 18:56:19,debugging,PyCharm,Analytics Platform,43,0,0,0,synthetic_simulation
+157,D016,Analytics,2025-02-27 14:52:19,coding,PyCharm,Analytics Platform,91,0,1,0,synthetic_simulation
+158,D015,QA,2025-02-28 10:53:47,coding,PyCharm,Customer Portal,48,0,1,0,synthetic_simulation
+159,D016,Analytics,2025-02-28 14:50:34,coding,IntelliJ IDEA,Analytics Platform,23,0,0,0,synthetic_simulation
+160,D012,Backend,2025-02-28 16:30:18,notification,Slack,Atlas API,7,1,0,0,synthetic_simulation
+161,D020,Frontend,2025-03-03 10:39:56,coding,PyCharm,Analytics Platform,106,0,1,0,synthetic_simulation
+162,D019,Backend,2025-03-03 11:11:34,testing,VS Code,Atlas API,7,0,0,0,synthetic_simulation
+163,D006,Data,2025-03-03 13:09:15,code_review,GitHub,Atlas API,5,0,0,0,synthetic_simulation
+164,D005,Data,2025-03-03 13:12:48,notification,Slack,Mobile App,1,1,0,0,synthetic_simulation
+165,D012,Backend,2025-03-03 13:27:09,debugging,PyCharm,Mobile App,52,0,1,0,synthetic_simulation
+166,D010,Backend,2025-03-04 10:33:58,coding,IntelliJ IDEA,Customer Portal,41,0,0,0,synthetic_simulation
+167,D016,Analytics,2025-03-04 11:19:25,debugging,IntelliJ IDEA,Mobile App,45,0,1,0,synthetic_simulation
+168,D003,Platform,2025-03-04 11:48:54,code_review,GitLab,Customer Portal,21,0,0,0,synthetic_simulation
+169,D001,Platform,2025-03-04 12:45:39,coding,IntelliJ IDEA,Atlas API,29,0,0,0,synthetic_simulation
+170,D004,Data,2025-03-04 16:44:13,code_review,GitLab,Data Pipeline,28,0,0,0,synthetic_simulation
+171,D017,Analytics,2025-03-05 12:50:10,break,Calendar,Atlas API,29,0,0,0,synthetic_simulation
+172,D003,Platform,2025-03-05 13:19:34,coding,IntelliJ IDEA,Atlas API,91,0,1,0,synthetic_simulation
+173,D003,Platform,2025-03-05 14:10:21,coding,IntelliJ IDEA,Customer Portal,104,0,1,0,synthetic_simulation
+174,D009,Frontend,2025-03-06 10:01:11,break,Away/Idle,Mobile App,24,0,0,0,synthetic_simulation
+175,D002,Platform,2025-03-06 12:43:40,testing,PyCharm,Mobile App,47,0,0,0,synthetic_simulation
+176,D016,Analytics,2025-03-06 12:55:09,coding,VS Code,Analytics Platform,36,0,0,0,synthetic_simulation
+177,D020,Frontend,2025-03-07 12:38:31,coding,PyCharm,Analytics Platform,78,0,1,0,synthetic_simulation
+178,D018,Platform,2025-03-09 10:04:11,coding,IntelliJ IDEA,Atlas API,69,0,1,0,synthetic_simulation
+179,D006,Data,2025-03-09 15:34:23,coding,PyCharm,Mobile App,46,0,1,0,synthetic_simulation
+180,D013,QA,2025-03-10 11:18:48,testing,PyCharm,Customer Portal,58,0,0,0,synthetic_simulation
+181,D012,Backend,2025-03-10 13:33:45,break,Away/Idle,Data Pipeline,29,0,0,0,synthetic_simulation
+182,D007,Frontend,2025-03-10 13:38:44,coding,VS Code,Atlas API,117,0,1,0,synthetic_simulation
+183,D003,Platform,2025-03-10 19:33:30,code_review,GitHub,Atlas API,30,0,0,0,synthetic_simulation
+184,D005,Data,2025-03-10 23:07:09,coding,PyCharm,Atlas API,34,0,0,0,synthetic_simulation
+185,D012,Backend,2025-03-11 12:05:34,coding,PyCharm,Atlas API,87,0,1,0,synthetic_simulation
+186,D014,QA,2025-03-11 12:38:53,testing,Terminal,Analytics Platform,15,0,0,0,synthetic_simulation
+187,D012,Backend,2025-03-11 17:53:19,code_review,GitLab,Mobile App,47,0,0,0,synthetic_simulation
+188,D001,Platform,2025-03-12 11:18:28,notification,Slack,Analytics Platform,8,1,0,0,synthetic_simulation
+189,D006,Data,2025-03-12 17:14:34,coding,IntelliJ IDEA,Customer Portal,101,0,1,0,synthetic_simulation
+190,D004,Data,2025-03-13 14:01:12,coding,PyCharm,Mobile App,100,0,1,0,synthetic_simulation
+191,D002,Platform,2025-03-13 14:29:28,meeting,Zoom,Analytics Platform,80,0,0,0,synthetic_simulation
+192,D015,QA,2025-03-13 18:58:36,coding,IntelliJ IDEA,Mobile App,55,0,1,0,synthetic_simulation
+193,D011,Backend,2025-03-15 12:33:41,testing,PyCharm,Analytics Platform,40,0,0,0,synthetic_simulation
+194,D010,Backend,2025-03-16 08:00:22,meeting,Google Meet,Customer Portal,53,0,0,0,synthetic_simulation
+195,D003,Platform,2025-03-16 15:14:00,coding,IntelliJ IDEA,Data Pipeline,27,0,0,0,synthetic_simulation
+196,D004,Data,2025-03-17 14:47:32,debugging,VS Code,Data Pipeline,29,0,0,0,synthetic_simulation
+197,D002,Platform,2025-03-18 10:29:17,code_review,GitHub,Mobile App,26,0,0,0,synthetic_simulation
+198,D018,Platform,2025-03-18 11:15:46,notification,Email,Analytics Platform,8,1,0,0,synthetic_simulation
+199,D014,QA,2025-03-18 12:31:04,testing,PyCharm,Data Pipeline,22,0,0,0,synthetic_simulation
+200,D013,QA,2025-03-18 13:46:34,coding,IntelliJ IDEA,Customer Portal,84,0,1,0,synthetic_simulation
+201,D005,Data,2025-03-18 14:19:26,coding,VS Code,Atlas API,30,0,0,0,synthetic_simulation
+202,D013,QA,2025-03-18 15:35:21,debugging,PyCharm,Analytics Platform,44,0,0,0,synthetic_simulation
+203,D008,Frontend,2025-03-18 15:54:49,coding,VS Code,Data Pipeline,74,0,1,0,synthetic_simulation
+204,D010,Backend,2025-03-18 17:55:25,coding,VS Code,Customer Portal,77,0,1,0,synthetic_simulation
+205,D011,Backend,2025-03-19 12:44:23,coding,IntelliJ IDEA,Atlas API,78,0,1,0,synthetic_simulation
+206,D010,Backend,2025-03-19 12:53:00,coding,IntelliJ IDEA,Data Pipeline,56,0,1,0,synthetic_simulation
+207,D018,Platform,2025-03-19 14:48:04,notification,Slack,Mobile App,2,1,0,0,synthetic_simulation
+208,D016,Analytics,2025-03-19 15:13:06,debugging,VS Code,Atlas API,70,0,1,0,synthetic_simulation
+209,D020,Frontend,2025-03-19 23:40:22,debugging,IntelliJ IDEA,Data Pipeline,10,0,0,0,synthetic_simulation
+210,D018,Platform,2025-03-20 07:06:32,code_review,GitLab,Analytics Platform,44,0,0,0,synthetic_simulation
+211,D002,Platform,2025-03-20 12:19:30,coding,VS Code,Analytics Platform,85,0,1,0,synthetic_simulation
+212,D008,Frontend,2025-03-20 14:44:57,coding,PyCharm,Customer Portal,36,0,0,0,synthetic_simulation
+213,D013,QA,2025-03-20 15:47:42,documentation,Browser,Customer Portal,44,0,0,0,synthetic_simulation
+214,D011,Backend,2025-03-21 08:46:22,code_review,GitHub,Mobile App,16,0,0,0,synthetic_simulation
+215,D002,Platform,2025-03-21 10:59:01,meeting,Microsoft Teams,Atlas API,29,0,0,0,synthetic_simulation
+216,D016,Analytics,2025-03-21 12:03:09,coding,PyCharm,Mobile App,21,0,0,0,synthetic_simulation
+217,D011,Backend,2025-03-21 20:56:54,debugging,PyCharm,Mobile App,13,0,0,0,synthetic_simulation
+218,D020,Frontend,2025-03-21 23:16:41,debugging,IntelliJ IDEA,Analytics Platform,59,0,1,0,synthetic_simulation
+219,D016,Analytics,2025-03-22 14:25:42,testing,VS Code,Data Pipeline,46,0,0,0,synthetic_simulation
+220,D010,Backend,2025-03-24 11:00:33,coding,VS Code,Analytics Platform,70,0,1,0,synthetic_simulation
+221,D012,Backend,2025-03-24 12:16:40,testing,VS Code,Customer Portal,15,0,0,0,synthetic_simulation
+222,D004,Data,2025-03-24 13:57:44,notification,Email,Customer Portal,8,1,0,0,synthetic_simulation
+223,D004,Data,2025-03-25 14:15:56,code_review,GitLab,Mobile App,16,0,0,1,synthetic_simulation
+224,D015,QA,2025-03-26 07:33:58,coding,VS Code,Analytics Platform,60,0,1,0,synthetic_simulation
+225,D011,Backend,2025-03-26 14:02:01,code_review,GitHub,Mobile App,22,0,0,0,synthetic_simulation
+226,D007,Frontend,2025-03-27 13:48:01,coding,IntelliJ IDEA,Atlas API,44,0,0,0,synthetic_simulation
+227,D007,Frontend,2025-03-27 14:26:37,coding,PyCharm,Atlas API,43,0,0,0,synthetic_simulation
+228,D011,Backend,2025-03-27 14:44:41,debugging,PyCharm,Data Pipeline,25,0,0,0,synthetic_simulation
+229,D005,Data,2025-03-27 19:25:25,testing,VS Code,Data Pipeline,20,0,0,0,synthetic_simulation
+230,D006,Data,2025-03-27 20:01:22,testing,PyCharm,Customer Portal,45,0,0,0,synthetic_simulation
+231,D015,QA,2025-03-28 11:26:45,meeting,Microsoft Teams,Mobile App,51,0,0,0,synthetic_simulation
+232,D015,QA,2025-03-28 15:10:56,code_review,GitHub,Analytics Platform,49,0,0,1,synthetic_simulation
+233,D006,Data,2025-03-28 22:03:21,coding,IntelliJ IDEA,Mobile App,110,0,1,0,synthetic_simulation
+234,D003,Platform,2025-03-31 09:40:58,coding,VS Code,Customer Portal,30,0,0,0,synthetic_simulation
+235,D012,Backend,2025-03-31 12:12:10,coding,VS Code,Atlas API,35,0,0,0,synthetic_simulation
+236,D010,Backend,2025-03-31 12:45:30,documentation,Confluence,Mobile App,24,0,0,0,synthetic_simulation
+237,D001,Platform,2025-03-31 15:39:29,coding,IntelliJ IDEA,Analytics Platform,104,0,1,0,synthetic_simulation
+238,D007,Frontend,2025-04-01 10:16:23,debugging,VS Code,Customer Portal,13,0,0,0,synthetic_simulation
+239,D006,Data,2025-04-01 10:44:00,documentation,Confluence,Customer Portal,7,0,0,0,synthetic_simulation
+240,D005,Data,2025-04-01 14:58:05,documentation,Confluence,Mobile App,20,0,0,0,synthetic_simulation
+241,D020,Frontend,2025-04-02 12:38:07,coding,VS Code,Customer Portal,56,0,1,0,synthetic_simulation
+242,D003,Platform,2025-04-02 13:06:20,coding,VS Code,Customer Portal,92,0,1,0,synthetic_simulation
+243,D018,Platform,2025-04-02 13:13:15,debugging,VS Code,Atlas API,64,0,1,0,synthetic_simulation
+244,D017,Analytics,2025-04-03 11:43:36,meeting,Google Meet,Data Pipeline,38,0,0,0,synthetic_simulation
+245,D013,QA,2025-04-03 12:01:56,coding,VS Code,Analytics Platform,21,0,0,0,synthetic_simulation
+246,D016,Analytics,2025-04-03 13:08:21,documentation,Notion,Mobile App,20,0,0,0,synthetic_simulation
+247,D017,Analytics,2025-04-04 11:46:56,coding,IntelliJ IDEA,Customer Portal,55,0,1,0,synthetic_simulation
+248,D018,Platform,2025-04-04 12:35:24,break,Calendar,Data Pipeline,21,0,0,0,synthetic_simulation
+249,D002,Platform,2025-04-04 13:57:46,coding,PyCharm,Mobile App,77,0,1,0,synthetic_simulation
+250,D007,Frontend,2025-04-04 14:37:09,meeting,Microsoft Teams,Customer Portal,40,0,0,0,synthetic_simulation
+251,D013,QA,2025-04-04 15:55:28,notification,Microsoft Teams,Data Pipeline,3,1,0,0,synthetic_simulation
+252,D017,Analytics,2025-04-04 16:33:01,notification,Microsoft Teams,Customer Portal,7,1,0,0,synthetic_simulation
+253,D018,Platform,2025-04-04 16:43:24,code_review,GitLab,Analytics Platform,21,0,0,0,synthetic_simulation
+254,D008,Frontend,2025-04-06 11:36:22,coding,IntelliJ IDEA,Mobile App,94,0,1,0,synthetic_simulation
+255,D010,Backend,2025-04-07 11:33:24,debugging,VS Code,Analytics Platform,34,0,0,0,synthetic_simulation
+256,D013,QA,2025-04-07 11:46:44,coding,PyCharm,Customer Portal,97,0,1,0,synthetic_simulation
+257,D008,Frontend,2025-04-07 14:19:36,coding,PyCharm,Atlas API,30,0,0,0,synthetic_simulation
+258,D002,Platform,2025-04-08 10:57:35,debugging,PyCharm,Data Pipeline,47,0,1,0,synthetic_simulation
+259,D006,Data,2025-04-08 15:29:13,notification,Microsoft Teams,Mobile App,4,1,0,0,synthetic_simulation
+260,D005,Data,2025-04-09 12:31:59,coding,IntelliJ IDEA,Mobile App,66,0,1,0,synthetic_simulation
+261,D007,Frontend,2025-04-09 16:12:20,coding,IntelliJ IDEA,Customer Portal,90,0,1,0,synthetic_simulation
+262,D003,Platform,2025-04-10 07:58:47,meeting,Microsoft Teams,Analytics Platform,54,0,0,0,synthetic_simulation
+263,D001,Platform,2025-04-10 12:02:21,meeting,Microsoft Teams,Atlas API,19,0,0,0,synthetic_simulation
+264,D004,Data,2025-04-10 12:25:48,coding,IntelliJ IDEA,Analytics Platform,37,0,0,0,synthetic_simulation
+265,D014,QA,2025-04-10 13:18:03,coding,PyCharm,Analytics Platform,43,0,0,0,synthetic_simulation
+266,D015,QA,2025-04-10 13:53:16,testing,VS Code,Customer Portal,32,0,0,0,synthetic_simulation
+267,D013,QA,2025-04-12 13:20:21,notification,Email,Analytics Platform,1,1,0,0,synthetic_simulation
+268,D003,Platform,2025-04-12 14:18:42,meeting,Zoom,Mobile App,67,1,0,0,synthetic_simulation
+269,D002,Platform,2025-04-12 19:15:47,documentation,Notion,Analytics Platform,16,0,0,0,synthetic_simulation
+270,D016,Analytics,2025-04-13 11:00:02,coding,IntelliJ IDEA,Customer Portal,113,0,1,0,synthetic_simulation
+271,D009,Frontend,2025-04-14 09:44:00,debugging,IntelliJ IDEA,Mobile App,66,0,1,0,synthetic_simulation
+272,D019,Backend,2025-04-14 13:55:37,coding,PyCharm,Analytics Platform,27,0,0,0,synthetic_simulation
+273,D016,Analytics,2025-04-14 14:21:23,coding,PyCharm,Data Pipeline,38,0,0,0,synthetic_simulation
+274,D009,Frontend,2025-04-14 14:39:50,testing,PyCharm,Mobile App,28,0,0,0,synthetic_simulation
+275,D013,QA,2025-04-15 10:01:42,testing,VS Code,Data Pipeline,35,0,0,0,synthetic_simulation
+276,D007,Frontend,2025-04-15 10:39:46,break,Calendar,Atlas API,12,0,0,0,synthetic_simulation
+277,D013,QA,2025-04-15 11:19:05,coding,VS Code,Atlas API,49,0,1,0,synthetic_simulation
+278,D011,Backend,2025-04-15 11:43:11,debugging,VS Code,Data Pipeline,39,0,0,0,synthetic_simulation
+279,D019,Backend,2025-04-15 12:51:18,coding,IntelliJ IDEA,Atlas API,55,0,1,0,synthetic_simulation
+280,D001,Platform,2025-04-16 09:07:59,notification,Email,Atlas API,8,1,0,0,synthetic_simulation
+281,D006,Data,2025-04-16 09:13:07,code_review,GitLab,Mobile App,9,0,0,0,synthetic_simulation
+282,D005,Data,2025-04-16 10:31:27,testing,Terminal,Analytics Platform,10,0,0,0,synthetic_simulation
+283,D014,QA,2025-04-16 11:58:18,testing,VS Code,Atlas API,11,0,0,0,synthetic_simulation
+284,D007,Frontend,2025-04-16 13:06:51,code_review,GitLab,Data Pipeline,17,0,0,0,synthetic_simulation
+285,D013,QA,2025-04-16 15:43:19,meeting,Google Meet,Atlas API,79,0,0,0,synthetic_simulation
+286,D014,QA,2025-04-16 21:24:56,code_review,GitLab,Data Pipeline,39,0,0,0,synthetic_simulation
+287,D018,Platform,2025-04-16 22:14:49,code_review,GitLab,Data Pipeline,38,0,0,0,synthetic_simulation
+288,D002,Platform,2025-04-17 08:44:06,notification,Microsoft Teams,Atlas API,3,1,0,0,synthetic_simulation
+289,D005,Data,2025-04-17 09:48:03,testing,Terminal,Analytics Platform,33,0,0,0,synthetic_simulation
+290,D014,QA,2025-04-18 08:25:59,notification,Microsoft Teams,Customer Portal,7,1,0,0,synthetic_simulation
+291,D002,Platform,2025-04-18 12:32:25,coding,PyCharm,Analytics Platform,72,0,1,0,synthetic_simulation
+292,D004,Data,2025-04-19 15:26:14,code_review,GitLab,Data Pipeline,11,0,0,0,synthetic_simulation
+293,D018,Platform,2025-04-19 16:02:39,coding,PyCharm,Atlas API,52,0,1,0,synthetic_simulation
+294,D013,QA,2025-04-21 10:56:03,testing,VS Code,Atlas API,37,0,0,0,synthetic_simulation
+295,D011,Backend,2025-04-21 11:03:27,coding,PyCharm,Data Pipeline,40,0,0,0,synthetic_simulation
+296,D001,Platform,2025-04-21 11:27:51,debugging,PyCharm,Mobile App,70,0,1,0,synthetic_simulation
+297,D017,Analytics,2025-04-21 13:05:29,coding,VS Code,Atlas API,64,0,1,0,synthetic_simulation
+298,D017,Analytics,2025-04-21 23:40:38,coding,PyCharm,Atlas API,25,0,0,0,synthetic_simulation
+299,D007,Frontend,2025-04-22 09:28:50,documentation,Notion,Mobile App,10,0,0,0,synthetic_simulation
+300,D014,QA,2025-04-22 10:54:21,code_review,GitLab,Mobile App,8,0,0,0,synthetic_simulation
+301,D006,Data,2025-04-22 12:05:38,break,Away/Idle,Customer Portal,29,0,0,0,synthetic_simulation
+302,D013,QA,2025-04-22 13:01:41,testing,Terminal,Atlas API,38,0,0,0,synthetic_simulation
+303,D019,Backend,2025-04-22 13:48:42,coding,PyCharm,Analytics Platform,62,0,1,0,synthetic_simulation
+304,D006,Data,2025-04-22 16:41:16,debugging,PyCharm,Atlas API,54,0,1,0,synthetic_simulation
+305,D012,Backend,2025-04-23 10:08:46,coding,PyCharm,Mobile App,48,0,1,0,synthetic_simulation
+306,D013,QA,2025-04-23 17:50:27,notification,Email,Analytics Platform,8,1,0,0,synthetic_simulation
+307,D009,Frontend,2025-04-23 18:55:13,break,Away/Idle,Customer Portal,7,0,0,0,synthetic_simulation
+308,D002,Platform,2025-04-24 13:02:40,documentation,Confluence,Customer Portal,43,0,0,0,synthetic_simulation
+309,D004,Data,2025-04-24 14:32:52,debugging,VS Code,Customer Portal,57,0,1,0,synthetic_simulation
+310,D011,Backend,2025-04-24 15:53:50,debugging,VS Code,Atlas API,39,0,0,0,synthetic_simulation
+311,D007,Frontend,2025-04-24 16:58:57,testing,VS Code,Mobile App,10,0,0,0,synthetic_simulation
+312,D010,Backend,2025-04-25 12:02:30,break,Calendar,Analytics Platform,27,0,0,0,synthetic_simulation
+313,D017,Analytics,2025-04-25 12:48:09,testing,VS Code,Analytics Platform,32,0,0,0,synthetic_simulation
+314,D014,QA,2025-04-25 14:05:45,documentation,Confluence,Data Pipeline,22,0,0,0,synthetic_simulation
+315,D017,Analytics,2025-04-25 14:53:29,debugging,IntelliJ IDEA,Mobile App,47,0,1,0,synthetic_simulation
+316,D016,Analytics,2025-04-25 15:57:23,notification,Slack,Data Pipeline,1,1,0,0,synthetic_simulation
+317,D006,Data,2025-04-25 21:50:29,coding,PyCharm,Customer Portal,105,0,1,0,synthetic_simulation
+318,D019,Backend,2025-04-25 23:14:01,notification,Email,Data Pipeline,4,1,0,0,synthetic_simulation
+319,D007,Frontend,2025-04-27 19:03:22,meeting,Microsoft Teams,Atlas API,78,1,0,0,synthetic_simulation
+320,D009,Frontend,2025-04-28 18:38:27,coding,VS Code,Atlas API,79,0,1,0,synthetic_simulation
+321,D009,Frontend,2025-04-30 07:27:37,coding,PyCharm,Customer Portal,37,0,0,0,synthetic_simulation
+322,D001,Platform,2025-04-30 16:51:25,coding,PyCharm,Atlas API,112,0,1,0,synthetic_simulation
+323,D002,Platform,2025-04-30 19:59:31,notification,Microsoft Teams,Atlas API,5,1,0,0,synthetic_simulation
+324,D005,Data,2025-05-01 15:31:50,code_review,GitHub,Atlas API,28,0,0,0,synthetic_simulation
+325,D018,Platform,2025-05-01 15:50:05,coding,VS Code,Analytics Platform,26,0,0,0,synthetic_simulation
+326,D010,Backend,2025-05-01 18:22:55,coding,IntelliJ IDEA,Customer Portal,93,0,1,0,synthetic_simulation
+327,D003,Platform,2025-05-02 12:05:34,coding,PyCharm,Customer Portal,118,0,1,0,synthetic_simulation
+328,D001,Platform,2025-05-02 15:43:26,coding,VS Code,Data Pipeline,56,0,1,0,synthetic_simulation
+329,D014,QA,2025-05-05 11:24:11,testing,VS Code,Data Pipeline,50,0,0,0,synthetic_simulation
+330,D007,Frontend,2025-05-05 12:16:53,coding,IntelliJ IDEA,Analytics Platform,92,0,1,0,synthetic_simulation
+331,D008,Frontend,2025-05-05 12:49:53,code_review,GitHub,Analytics Platform,19,0,0,0,synthetic_simulation
+332,D013,QA,2025-05-05 12:51:41,coding,PyCharm,Atlas API,103,0,1,0,synthetic_simulation
+333,D013,QA,2025-05-05 13:35:19,testing,VS Code,Atlas API,60,0,0,1,synthetic_simulation
+334,D017,Analytics,2025-05-06 12:34:19,coding,IntelliJ IDEA,Data Pipeline,34,0,0,0,synthetic_simulation
+335,D013,QA,2025-05-06 13:23:34,documentation,Browser,Atlas API,29,0,0,0,synthetic_simulation
+336,D018,Platform,2025-05-06 16:14:54,debugging,PyCharm,Atlas API,67,0,1,0,synthetic_simulation
+337,D012,Backend,2025-05-06 18:57:46,coding,PyCharm,Customer Portal,34,0,0,0,synthetic_simulation
+338,D006,Data,2025-05-07 13:56:43,coding,VS Code,Atlas API,52,0,1,0,synthetic_simulation
+339,D011,Backend,2025-05-08 09:14:13,coding,VS Code,Analytics Platform,65,0,1,0,synthetic_simulation
+340,D011,Backend,2025-05-08 10:36:12,coding,PyCharm,Analytics Platform,76,0,1,0,synthetic_simulation
+341,D006,Data,2025-05-08 11:05:37,notification,Slack,Data Pipeline,5,1,0,0,synthetic_simulation
+342,D003,Platform,2025-05-08 14:53:07,code_review,GitLab,Analytics Platform,37,0,0,0,synthetic_simulation
+343,D009,Frontend,2025-05-09 11:04:48,coding,IntelliJ IDEA,Analytics Platform,98,0,1,0,synthetic_simulation
+344,D019,Backend,2025-05-09 16:40:55,coding,IntelliJ IDEA,Atlas API,62,0,1,0,synthetic_simulation
+345,D020,Frontend,2025-05-09 17:31:39,notification,Microsoft Teams,Mobile App,2,1,0,0,synthetic_simulation
+346,D008,Frontend,2025-05-10 13:10:23,coding,VS Code,Data Pipeline,69,0,1,0,synthetic_simulation
+347,D003,Platform,2025-05-10 17:15:40,coding,PyCharm,Atlas API,103,0,1,0,synthetic_simulation
+348,D008,Frontend,2025-05-11 14:45:15,code_review,GitLab,Atlas API,38,0,0,0,synthetic_simulation
+349,D019,Backend,2025-05-12 13:27:49,break,Calendar,Atlas API,13,0,0,0,synthetic_simulation
+350,D010,Backend,2025-05-12 15:22:24,notification,Microsoft Teams,Analytics Platform,5,1,0,0,synthetic_simulation
+351,D011,Backend,2025-05-12 15:50:52,coding,IntelliJ IDEA,Customer Portal,89,0,1,0,synthetic_simulation
+352,D002,Platform,2025-05-12 19:44:08,notification,Email,Mobile App,3,1,0,0,synthetic_simulation
+353,D020,Frontend,2025-05-12 21:09:58,notification,Email,Customer Portal,8,1,0,0,synthetic_simulation
+354,D020,Frontend,2025-05-13 18:47:14,code_review,GitHub,Mobile App,20,0,0,1,synthetic_simulation
+355,D017,Analytics,2025-05-13 18:50:35,meeting,Microsoft Teams,Analytics Platform,61,0,0,0,synthetic_simulation
+356,D009,Frontend,2025-05-14 09:04:13,code_review,GitLab,Atlas API,22,0,0,0,synthetic_simulation
+357,D002,Platform,2025-05-14 10:02:08,notification,Microsoft Teams,Data Pipeline,8,1,0,0,synthetic_simulation
+358,D010,Backend,2025-05-14 10:17:20,coding,PyCharm,Atlas API,23,0,0,0,synthetic_simulation
+359,D016,Analytics,2025-05-14 13:48:25,documentation,Notion,Analytics Platform,26,0,0,0,synthetic_simulation
+360,D006,Data,2025-05-14 14:34:31,meeting,Google Meet,Analytics Platform,80,0,0,0,synthetic_simulation
+361,D014,QA,2025-05-14 14:41:09,break,Away/Idle,Customer Portal,5,0,0,0,synthetic_simulation
+362,D015,QA,2025-05-14 17:22:58,notification,Microsoft Teams,Data Pipeline,1,1,0,0,synthetic_simulation
+363,D010,Backend,2025-05-14 22:27:37,coding,IntelliJ IDEA,Analytics Platform,120,0,1,0,synthetic_simulation
+364,D008,Frontend,2025-05-15 14:47:01,break,Away/Idle,Data Pipeline,8,0,0,0,synthetic_simulation
+365,D013,QA,2025-05-15 14:55:12,notification,Slack,Customer Portal,4,1,0,0,synthetic_simulation
+366,D002,Platform,2025-05-15 14:59:30,debugging,PyCharm,Analytics Platform,35,0,0,0,synthetic_simulation
+367,D012,Backend,2025-05-15 15:18:55,coding,IntelliJ IDEA,Customer Portal,65,0,1,0,synthetic_simulation
+368,D018,Platform,2025-05-15 16:55:30,meeting,Microsoft Teams,Analytics Platform,80,0,0,0,synthetic_simulation
+369,D019,Backend,2025-05-15 18:56:28,coding,VS Code,Customer Portal,27,0,0,0,synthetic_simulation
+370,D008,Frontend,2025-05-16 10:53:05,coding,IntelliJ IDEA,Atlas API,77,0,1,0,synthetic_simulation
+371,D012,Backend,2025-05-16 11:13:56,coding,VS Code,Analytics Platform,92,0,1,0,synthetic_simulation
+372,D002,Platform,2025-05-16 11:55:05,notification,Email,Customer Portal,5,1,0,0,synthetic_simulation
+373,D015,QA,2025-05-16 11:58:31,coding,PyCharm,Data Pipeline,109,0,1,0,synthetic_simulation
+374,D013,QA,2025-05-16 14:33:48,documentation,Notion,Analytics Platform,11,0,0,0,synthetic_simulation
+375,D018,Platform,2025-05-16 16:09:46,coding,VS Code,Data Pipeline,43,0,0,0,synthetic_simulation
+376,D015,QA,2025-05-19 15:07:01,coding,PyCharm,Data Pipeline,118,0,1,0,synthetic_simulation
+377,D018,Platform,2025-05-19 23:27:27,coding,IntelliJ IDEA,Analytics Platform,53,0,1,0,synthetic_simulation
+378,D016,Analytics,2025-05-20 10:46:48,testing,Terminal,Mobile App,24,0,0,0,synthetic_simulation
+379,D016,Analytics,2025-05-20 12:11:09,documentation,Browser,Data Pipeline,17,0,0,1,synthetic_simulation
+380,D006,Data,2025-05-20 16:42:41,coding,VS Code,Analytics Platform,18,0,0,0,synthetic_simulation
+381,D001,Platform,2025-05-20 18:39:09,coding,VS Code,Mobile App,22,0,0,0,synthetic_simulation
+382,D005,Data,2025-05-21 12:46:40,documentation,Browser,Analytics Platform,20,0,0,0,synthetic_simulation
+383,D014,QA,2025-05-21 18:48:56,break,Calendar,Data Pipeline,14,0,0,0,synthetic_simulation
+384,D013,QA,2025-05-22 11:38:07,testing,VS Code,Mobile App,31,0,0,0,synthetic_simulation
+385,D020,Frontend,2025-05-22 13:42:19,debugging,VS Code,Atlas API,67,0,1,0,synthetic_simulation
+386,D012,Backend,2025-05-22 16:29:33,debugging,VS Code,Customer Portal,31,0,0,0,synthetic_simulation
+387,D009,Frontend,2025-05-23 12:07:34,coding,PyCharm,Data Pipeline,35,0,0,0,synthetic_simulation
+388,D003,Platform,2025-05-23 16:25:26,code_review,GitHub,Mobile App,28,0,0,0,synthetic_simulation
+389,D004,Data,2025-05-23 21:17:37,debugging,PyCharm,Customer Portal,11,0,0,0,synthetic_simulation
+390,D007,Frontend,2025-05-25 13:44:20,coding,VS Code,Data Pipeline,46,0,1,0,synthetic_simulation
+391,D011,Backend,2025-05-26 10:54:21,documentation,Notion,Analytics Platform,11,0,0,0,synthetic_simulation
+392,D008,Frontend,2025-05-26 12:55:44,debugging,PyCharm,Customer Portal,61,0,1,0,synthetic_simulation
+393,D003,Platform,2025-05-26 14:19:52,notification,Email,Customer Portal,6,1,0,0,synthetic_simulation
+394,D004,Data,2025-05-26 14:32:37,coding,IntelliJ IDEA,Customer Portal,18,0,0,0,synthetic_simulation
+395,D015,QA,2025-05-26 14:40:38,coding,IntelliJ IDEA,Mobile App,94,0,1,0,synthetic_simulation
+396,D003,Platform,2025-05-27 09:44:28,coding,PyCharm,Mobile App,82,0,1,0,synthetic_simulation
+397,D004,Data,2025-05-27 12:37:55,coding,IntelliJ IDEA,Analytics Platform,108,0,1,0,synthetic_simulation
+398,D019,Backend,2025-05-27 14:32:34,coding,VS Code,Customer Portal,83,0,1,0,synthetic_simulation
+399,D004,Data,2025-05-27 14:55:52,coding,IntelliJ IDEA,Mobile App,84,0,1,0,synthetic_simulation
+400,D015,QA,2025-05-27 15:35:40,coding,VS Code,Data Pipeline,17,0,0,0,synthetic_simulation
+401,D020,Frontend,2025-05-28 07:47:50,coding,IntelliJ IDEA,Customer Portal,61,0,1,0,synthetic_simulation
+402,D016,Analytics,2025-05-28 09:16:36,testing,Terminal,Data Pipeline,52,0,0,0,synthetic_simulation
+403,D013,QA,2025-05-28 12:12:11,coding,IntelliJ IDEA,Data Pipeline,81,0,1,0,synthetic_simulation
+404,D010,Backend,2025-05-28 15:41:44,coding,PyCharm,Analytics Platform,72,0,1,0,synthetic_simulation
+405,D005,Data,2025-05-29 14:21:28,coding,VS Code,Customer Portal,26,0,0,0,synthetic_simulation
+406,D008,Frontend,2025-05-30 14:11:36,testing,Terminal,Customer Portal,6,0,0,0,synthetic_simulation
+407,D002,Platform,2025-05-30 19:33:14,debugging,IntelliJ IDEA,Customer Portal,69,0,1,0,synthetic_simulation
+408,D014,QA,2025-05-31 13:38:14,coding,PyCharm,Customer Portal,49,0,1,0,synthetic_simulation
+409,D016,Analytics,2025-05-31 20:48:29,debugging,PyCharm,Customer Portal,37,0,0,0,synthetic_simulation
+410,D005,Data,2025-06-02 10:24:36,coding,IntelliJ IDEA,Data Pipeline,84,0,1,0,synthetic_simulation
+411,D016,Analytics,2025-06-02 10:33:47,code_review,GitHub,Atlas API,49,0,0,0,synthetic_simulation
+412,D019,Backend,2025-06-02 10:40:34,notification,Microsoft Teams,Customer Portal,8,1,0,0,synthetic_simulation
+413,D016,Analytics,2025-06-02 14:39:15,code_review,GitHub,Data Pipeline,6,0,0,0,synthetic_simulation
+414,D016,Analytics,2025-06-03 10:03:03,code_review,GitHub,Mobile App,26,0,0,0,synthetic_simulation
+415,D001,Platform,2025-06-03 13:06:03,break,Away/Idle,Mobile App,11,0,0,0,synthetic_simulation
+416,D008,Frontend,2025-06-03 15:43:48,coding,PyCharm,Analytics Platform,96,0,1,0,synthetic_simulation
+417,D016,Analytics,2025-06-04 12:13:33,notification,Slack,Data Pipeline,7,1,0,0,synthetic_simulation
+418,D005,Data,2025-06-04 14:53:52,code_review,GitHub,Data Pipeline,29,0,0,0,synthetic_simulation
+419,D007,Frontend,2025-06-04 17:36:08,code_review,GitHub,Atlas API,20,0,0,0,synthetic_simulation
+420,D002,Platform,2025-06-05 12:15:51,testing,Terminal,Atlas API,7,0,0,0,synthetic_simulation
+421,D018,Platform,2025-06-05 12:18:20,coding,PyCharm,Analytics Platform,120,0,1,0,synthetic_simulation
+422,D018,Platform,2025-06-05 14:31:45,testing,Terminal,Data Pipeline,5,0,0,1,synthetic_simulation
+423,D015,QA,2025-06-05 16:45:16,debugging,PyCharm,Atlas API,63,0,1,0,synthetic_simulation
+424,D004,Data,2025-06-05 16:53:46,notification,Email,Data Pipeline,6,1,0,0,synthetic_simulation
+425,D009,Frontend,2025-06-06 09:53:06,documentation,Confluence,Analytics Platform,9,0,0,0,synthetic_simulation
+426,D001,Platform,2025-06-06 12:08:40,testing,VS Code,Analytics Platform,43,0,0,0,synthetic_simulation
+427,D010,Backend,2025-06-06 13:23:46,notification,Microsoft Teams,Customer Portal,4,1,0,0,synthetic_simulation
+428,D017,Analytics,2025-06-06 13:47:25,coding,PyCharm,Customer Portal,84,0,1,0,synthetic_simulation
+429,D018,Platform,2025-06-06 13:53:56,testing,Terminal,Customer Portal,20,0,0,0,synthetic_simulation
+430,D016,Analytics,2025-06-06 15:52:29,coding,PyCharm,Customer Portal,97,0,1,0,synthetic_simulation
+431,D011,Backend,2025-06-07 11:10:16,break,Calendar,Data Pipeline,11,0,0,0,synthetic_simulation
+432,D007,Frontend,2025-06-08 16:44:45,notification,Slack,Analytics Platform,7,1,0,0,synthetic_simulation
+433,D009,Frontend,2025-06-09 08:53:00,coding,VS Code,Analytics Platform,63,0,1,0,synthetic_simulation
+434,D002,Platform,2025-06-09 11:10:32,code_review,GitLab,Data Pipeline,26,0,0,0,synthetic_simulation
+435,D009,Frontend,2025-06-09 13:31:30,coding,IntelliJ IDEA,Mobile App,61,0,1,0,synthetic_simulation
+436,D001,Platform,2025-06-09 13:44:38,coding,VS Code,Atlas API,19,0,0,0,synthetic_simulation
+437,D003,Platform,2025-06-09 14:59:45,break,Away/Idle,Customer Portal,22,0,0,0,synthetic_simulation
+438,D010,Backend,2025-06-09 15:31:33,documentation,Browser,Customer Portal,28,0,0,0,synthetic_simulation
+439,D016,Analytics,2025-06-09 15:51:19,coding,IntelliJ IDEA,Analytics Platform,120,0,1,0,synthetic_simulation
+440,D001,Platform,2025-06-10 16:19:38,testing,VS Code,Analytics Platform,20,0,0,0,synthetic_simulation
+441,D011,Backend,2025-06-11 23:01:44,coding,VS Code,Mobile App,82,0,1,0,synthetic_simulation
+442,D009,Frontend,2025-06-12 10:33:08,meeting,Microsoft Teams,Analytics Platform,45,0,0,0,synthetic_simulation
+443,D001,Platform,2025-06-12 11:29:08,coding,IntelliJ IDEA,Mobile App,30,0,0,0,synthetic_simulation
+444,D008,Frontend,2025-06-12 14:14:59,coding,VS Code,Analytics Platform,37,0,0,0,synthetic_simulation
+445,D002,Platform,2025-06-12 14:59:57,meeting,Zoom,Atlas API,33,1,0,0,synthetic_simulation
+446,D010,Backend,2025-06-13 08:52:23,testing,Terminal,Customer Portal,20,0,0,0,synthetic_simulation
+447,D005,Data,2025-06-13 11:01:25,coding,IntelliJ IDEA,Atlas API,29,0,0,0,synthetic_simulation
+448,D013,QA,2025-06-13 11:15:58,break,Calendar,Data Pipeline,5,0,0,0,synthetic_simulation
+449,D007,Frontend,2025-06-13 14:30:49,coding,IntelliJ IDEA,Mobile App,94,0,1,0,synthetic_simulation
+450,D009,Frontend,2025-06-13 15:18:54,debugging,PyCharm,Mobile App,21,0,0,0,synthetic_simulation
+451,D005,Data,2025-06-13 16:04:18,meeting,Google Meet,Customer Portal,88,0,0,0,synthetic_simulation
+452,D007,Frontend,2025-06-14 12:27:48,coding,IntelliJ IDEA,Mobile App,104,0,1,0,synthetic_simulation
+453,D015,QA,2025-06-15 12:16:52,testing,VS Code,Customer Portal,49,0,0,0,synthetic_simulation
+454,D004,Data,2025-06-16 10:50:18,coding,VS Code,Mobile App,74,0,1,0,synthetic_simulation
+455,D002,Platform,2025-06-16 12:30:08,coding,IntelliJ IDEA,Data Pipeline,58,0,1,0,synthetic_simulation
+456,D011,Backend,2025-06-16 14:10:09,debugging,IntelliJ IDEA,Data Pipeline,54,0,1,0,synthetic_simulation
+457,D010,Backend,2025-06-16 16:18:03,testing,Terminal,Analytics Platform,19,0,0,0,synthetic_simulation
+458,D013,QA,2025-06-17 09:48:11,testing,PyCharm,Customer Portal,12,0,0,0,synthetic_simulation
+459,D014,QA,2025-06-17 12:29:33,testing,Terminal,Analytics Platform,54,0,0,0,synthetic_simulation
+460,D004,Data,2025-06-17 14:25:16,debugging,IntelliJ IDEA,Atlas API,49,0,1,0,synthetic_simulation
+461,D010,Backend,2025-06-17 15:28:13,coding,PyCharm,Mobile App,50,0,1,0,synthetic_simulation
+462,D013,QA,2025-06-17 15:57:18,code_review,GitLab,Data Pipeline,7,0,0,0,synthetic_simulation
+463,D016,Analytics,2025-06-18 11:20:45,code_review,GitLab,Data Pipeline,27,0,0,0,synthetic_simulation
+464,D007,Frontend,2025-06-18 11:27:11,meeting,Microsoft Teams,Analytics Platform,31,0,0,0,synthetic_simulation
+465,D016,Analytics,2025-06-18 14:33:46,coding,VS Code,Customer Portal,52,0,1,0,synthetic_simulation
+466,D006,Data,2025-06-18 14:36:35,coding,IntelliJ IDEA,Atlas API,116,0,1,0,synthetic_simulation
+467,D001,Platform,2025-06-18 14:40:16,coding,VS Code,Customer Portal,20,0,0,0,synthetic_simulation
+468,D019,Backend,2025-06-18 16:12:56,documentation,Notion,Analytics Platform,19,0,0,0,synthetic_simulation
+469,D002,Platform,2025-06-20 13:03:02,coding,VS Code,Atlas API,91,0,1,0,synthetic_simulation
+470,D020,Frontend,2025-06-20 14:45:51,coding,VS Code,Mobile App,63,0,1,0,synthetic_simulation
+471,D018,Platform,2025-06-23 11:43:50,coding,VS Code,Analytics Platform,59,0,1,0,synthetic_simulation
+472,D015,QA,2025-06-23 14:29:43,debugging,IntelliJ IDEA,Customer Portal,34,0,0,0,synthetic_simulation
+473,D012,Backend,2025-06-23 17:29:11,code_review,GitLab,Customer Portal,21,0,0,0,synthetic_simulation
+474,D019,Backend,2025-06-24 14:12:49,documentation,Notion,Mobile App,43,0,0,0,synthetic_simulation
+475,D020,Frontend,2025-06-24 16:24:43,notification,Microsoft Teams,Mobile App,2,1,0,0,synthetic_simulation
+476,D009,Frontend,2025-06-25 09:04:41,testing,VS Code,Atlas API,59,0,0,0,synthetic_simulation
+477,D007,Frontend,2025-06-25 13:25:09,meeting,Google Meet,Analytics Platform,71,0,0,0,synthetic_simulation
+478,D013,QA,2025-06-25 16:20:03,debugging,VS Code,Atlas API,22,0,0,0,synthetic_simulation
+479,D002,Platform,2025-06-26 11:14:24,testing,PyCharm,Analytics Platform,40,0,0,0,synthetic_simulation
+480,D008,Frontend,2025-06-26 13:21:55,code_review,GitLab,Atlas API,29,0,0,0,synthetic_simulation
+481,D013,QA,2025-06-26 14:28:55,debugging,VS Code,Atlas API,12,0,0,0,synthetic_simulation
+482,D003,Platform,2025-06-27 11:08:05,code_review,GitHub,Analytics Platform,19,0,0,0,synthetic_simulation
+483,D017,Analytics,2025-06-27 12:12:03,notification,Slack,Customer Portal,8,1,0,0,synthetic_simulation
+484,D009,Frontend,2025-06-27 12:54:56,coding,PyCharm,Analytics Platform,78,0,1,0,synthetic_simulation
+485,D004,Data,2025-06-30 08:24:45,meeting,Zoom,Analytics Platform,44,0,0,0,synthetic_simulation
+486,D014,QA,2025-06-30 13:59:11,coding,VS Code,Customer Portal,89,0,1,0,synthetic_simulation
+487,D012,Backend,2025-06-30 23:16:42,coding,PyCharm,Analytics Platform,104,0,1,0,synthetic_simulation
+488,D006,Data,2025-07-01 13:14:46,testing,VS Code,Mobile App,30,0,0,0,synthetic_simulation
+489,D007,Frontend,2025-07-01 14:17:05,code_review,GitHub,Atlas API,49,0,0,0,synthetic_simulation
+490,D019,Backend,2025-07-01 15:41:36,coding,PyCharm,Mobile App,98,0,1,0,synthetic_simulation
+491,D018,Platform,2025-07-02 09:57:54,notification,Microsoft Teams,Customer Portal,1,1,0,0,synthetic_simulation
+492,D003,Platform,2025-07-02 11:03:24,documentation,Browser,Mobile App,15,0,0,0,synthetic_simulation
+493,D020,Frontend,2025-07-02 12:05:43,meeting,Microsoft Teams,Mobile App,71,0,0,0,synthetic_simulation
+494,D017,Analytics,2025-07-03 09:08:34,meeting,Microsoft Teams,Customer Portal,30,0,0,0,synthetic_simulation
+495,D014,QA,2025-07-03 11:07:46,debugging,VS Code,Mobile App,10,0,0,0,synthetic_simulation
+496,D008,Frontend,2025-07-03 13:18:35,coding,IntelliJ IDEA,Customer Portal,102,0,1,0,synthetic_simulation
+497,D014,QA,2025-07-03 14:52:20,debugging,IntelliJ IDEA,Data Pipeline,11,0,0,0,synthetic_simulation
+498,D020,Frontend,2025-07-04 11:04:18,meeting,Zoom,Customer Portal,29,0,0,0,synthetic_simulation
+499,D010,Backend,2025-07-04 15:33:53,break,Calendar,Mobile App,10,0,0,0,synthetic_simulation
+500,D002,Platform,2025-07-05 12:29:41,debugging,IntelliJ IDEA,Analytics Platform,64,0,1,0,synthetic_simulation
+501,D019,Backend,2025-07-07 07:49:16,testing,Terminal,Mobile App,56,0,0,0,synthetic_simulation
+502,D019,Backend,2025-07-07 11:04:17,testing,PyCharm,Data Pipeline,19,0,0,0,synthetic_simulation
+503,D002,Platform,2025-07-07 11:53:08,coding,VS Code,Data Pipeline,103,0,1,0,synthetic_simulation
+504,D015,QA,2025-07-07 12:39:47,debugging,IntelliJ IDEA,Customer Portal,48,0,1,0,synthetic_simulation
+505,D004,Data,2025-07-07 14:14:35,coding,VS Code,Data Pipeline,119,0,1,0,synthetic_simulation
+506,D008,Frontend,2025-07-07 15:27:55,notification,Slack,Atlas API,5,1,0,0,synthetic_simulation
+507,D020,Frontend,2025-07-07 20:37:26,coding,IntelliJ IDEA,Atlas API,48,0,1,0,synthetic_simulation
+508,D004,Data,2025-07-07 22:41:36,coding,PyCharm,Customer Portal,65,0,1,0,synthetic_simulation
+509,D002,Platform,2025-07-08 12:50:12,coding,IntelliJ IDEA,Customer Portal,115,0,1,0,synthetic_simulation
+510,D006,Data,2025-07-08 13:31:50,coding,PyCharm,Customer Portal,61,0,1,0,synthetic_simulation
+511,D012,Backend,2025-07-08 16:57:57,testing,VS Code,Data Pipeline,43,0,0,0,synthetic_simulation
+512,D009,Frontend,2025-07-09 08:19:00,documentation,Notion,Data Pipeline,5,0,0,0,synthetic_simulation
+513,D010,Backend,2025-07-09 13:21:24,testing,Terminal,Atlas API,43,0,0,0,synthetic_simulation
+514,D003,Platform,2025-07-09 14:22:25,testing,Terminal,Mobile App,19,0,0,0,synthetic_simulation
+515,D008,Frontend,2025-07-09 14:23:45,coding,PyCharm,Data Pipeline,37,0,0,0,synthetic_simulation
+516,D018,Platform,2025-07-09 15:52:21,testing,PyCharm,Customer Portal,35,0,0,0,synthetic_simulation
+517,D019,Backend,2025-07-09 17:32:39,debugging,IntelliJ IDEA,Atlas API,22,0,0,0,synthetic_simulation
+518,D016,Analytics,2025-07-10 12:02:35,coding,IntelliJ IDEA,Data Pipeline,116,0,1,0,synthetic_simulation
+519,D007,Frontend,2025-07-10 14:32:57,coding,IntelliJ IDEA,Mobile App,46,0,1,0,synthetic_simulation
+520,D017,Analytics,2025-07-10 15:25:52,break,Calendar,Mobile App,9,0,0,0,synthetic_simulation
+521,D016,Analytics,2025-07-10 15:43:29,coding,VS Code,Customer Portal,52,0,1,0,synthetic_simulation
+522,D002,Platform,2025-07-11 12:04:20,code_review,GitHub,Analytics Platform,45,0,0,0,synthetic_simulation
+523,D014,QA,2025-07-11 12:50:04,coding,VS Code,Customer Portal,52,0,1,0,synthetic_simulation
+524,D004,Data,2025-07-11 14:01:47,debugging,IntelliJ IDEA,Mobile App,72,0,1,0,synthetic_simulation
+525,D003,Platform,2025-07-11 23:47:56,debugging,PyCharm,Data Pipeline,67,0,1,0,synthetic_simulation
+526,D001,Platform,2025-07-14 11:56:12,notification,Email,Atlas API,5,1,0,0,synthetic_simulation
+527,D007,Frontend,2025-07-15 09:09:10,code_review,GitHub,Analytics Platform,27,0,0,0,synthetic_simulation
+528,D006,Data,2025-07-15 11:20:10,break,Calendar,Data Pipeline,29,0,0,0,synthetic_simulation
+529,D015,QA,2025-07-15 14:25:23,code_review,GitHub,Data Pipeline,16,0,0,0,synthetic_simulation
+530,D016,Analytics,2025-07-15 18:58:32,coding,PyCharm,Mobile App,113,0,1,0,synthetic_simulation
+531,D002,Platform,2025-07-16 11:16:00,coding,VS Code,Customer Portal,113,0,1,0,synthetic_simulation
+532,D006,Data,2025-07-16 15:59:30,testing,VS Code,Data Pipeline,13,0,0,0,synthetic_simulation
+533,D012,Backend,2025-07-17 12:26:02,code_review,GitHub,Analytics Platform,43,0,0,0,synthetic_simulation
+534,D006,Data,2025-07-18 08:38:43,coding,PyCharm,Analytics Platform,120,0,1,0,synthetic_simulation
+535,D001,Platform,2025-07-18 13:24:30,break,Away/Idle,Mobile App,24,0,0,0,synthetic_simulation
+536,D014,QA,2025-07-18 15:53:24,notification,Microsoft Teams,Analytics Platform,1,1,0,0,synthetic_simulation
+537,D016,Analytics,2025-07-21 09:41:51,testing,Terminal,Mobile App,12,0,0,0,synthetic_simulation
+538,D017,Analytics,2025-07-21 12:00:30,coding,IntelliJ IDEA,Mobile App,55,0,1,0,synthetic_simulation
+539,D017,Analytics,2025-07-21 14:55:37,coding,VS Code,Atlas API,25,0,0,0,synthetic_simulation
+540,D015,QA,2025-07-21 18:28:29,code_review,GitHub,Mobile App,42,0,0,0,synthetic_simulation
+541,D011,Backend,2025-07-22 09:59:35,testing,PyCharm,Atlas API,52,0,0,0,synthetic_simulation
+542,D015,QA,2025-07-22 12:14:34,debugging,IntelliJ IDEA,Analytics Platform,10,0,0,0,synthetic_simulation
+543,D016,Analytics,2025-07-22 14:50:19,coding,VS Code,Analytics Platform,104,0,1,0,synthetic_simulation
+544,D015,QA,2025-07-22 16:29:10,coding,VS Code,Customer Portal,43,0,0,0,synthetic_simulation
+545,D011,Backend,2025-07-22 19:03:12,debugging,PyCharm,Analytics Platform,17,0,0,0,synthetic_simulation
+546,D005,Data,2025-07-23 12:38:38,notification,Microsoft Teams,Analytics Platform,1,1,0,0,synthetic_simulation
+547,D003,Platform,2025-07-23 12:43:58,coding,PyCharm,Mobile App,114,0,1,0,synthetic_simulation
+548,D013,QA,2025-07-23 14:10:09,code_review,GitLab,Data Pipeline,31,0,0,0,synthetic_simulation
+549,D012,Backend,2025-07-23 17:35:12,code_review,GitHub,Data Pipeline,39,0,0,0,synthetic_simulation
+550,D011,Backend,2025-07-24 13:46:53,documentation,Confluence,Analytics Platform,42,0,0,0,synthetic_simulation
+551,D004,Data,2025-07-24 14:48:59,coding,VS Code,Data Pipeline,56,0,1,0,synthetic_simulation
+552,D006,Data,2025-07-24 15:56:43,code_review,GitHub,Data Pipeline,39,0,0,0,synthetic_simulation
+553,D019,Backend,2025-07-25 10:14:27,coding,PyCharm,Mobile App,76,0,1,0,synthetic_simulation
+554,D010,Backend,2025-07-25 12:34:41,notification,Slack,Analytics Platform,4,1,0,0,synthetic_simulation
+555,D016,Analytics,2025-07-25 13:58:37,coding,VS Code,Analytics Platform,116,0,1,0,synthetic_simulation
+556,D012,Backend,2025-07-25 14:43:08,coding,IntelliJ IDEA,Analytics Platform,60,0,1,0,synthetic_simulation
+557,D009,Frontend,2025-07-25 14:55:02,coding,VS Code,Mobile App,31,0,0,0,synthetic_simulation
+558,D007,Frontend,2025-07-25 15:30:47,documentation,Browser,Atlas API,8,0,0,0,synthetic_simulation
+559,D018,Platform,2025-07-25 18:14:40,code_review,GitHub,Analytics Platform,29,0,0,0,synthetic_simulation
+560,D017,Analytics,2025-07-28 11:09:12,testing,VS Code,Analytics Platform,54,0,0,0,synthetic_simulation
+561,D015,QA,2025-07-28 11:12:41,testing,Terminal,Mobile App,8,0,0,0,synthetic_simulation
+562,D018,Platform,2025-07-28 12:05:28,testing,PyCharm,Atlas API,10,0,0,0,synthetic_simulation
+563,D007,Frontend,2025-07-29 10:40:20,meeting,Google Meet,Atlas API,82,1,0,0,synthetic_simulation
+564,D007,Frontend,2025-07-29 15:22:48,coding,VS Code,Analytics Platform,101,0,1,1,synthetic_simulation
+565,D002,Platform,2025-07-29 16:30:57,testing,VS Code,Data Pipeline,23,0,0,0,synthetic_simulation
+566,D001,Platform,2025-07-29 17:23:48,code_review,GitHub,Data Pipeline,19,0,0,0,synthetic_simulation
+567,D017,Analytics,2025-07-30 11:30:31,coding,PyCharm,Atlas API,117,0,1,0,synthetic_simulation
+568,D011,Backend,2025-07-30 12:41:22,testing,PyCharm,Atlas API,37,0,0,0,synthetic_simulation
+569,D011,Backend,2025-07-30 13:37:27,debugging,PyCharm,Atlas API,35,0,0,1,synthetic_simulation
+570,D012,Backend,2025-07-30 19:56:07,coding,IntelliJ IDEA,Analytics Platform,75,0,1,0,synthetic_simulation
+571,D016,Analytics,2025-07-30 21:40:36,coding,IntelliJ IDEA,Customer Portal,62,0,1,0,synthetic_simulation
+572,D015,QA,2025-07-31 11:18:22,debugging,VS Code,Analytics Platform,67,0,1,0,synthetic_simulation
+573,D005,Data,2025-07-31 14:02:42,meeting,Google Meet,Analytics Platform,55,0,0,0,synthetic_simulation
+574,D017,Analytics,2025-07-31 14:08:30,break,Calendar,Data Pipeline,20,0,0,0,synthetic_simulation
+575,D014,QA,2025-07-31 14:48:41,testing,VS Code,Atlas API,10,0,0,0,synthetic_simulation
+576,D007,Frontend,2025-07-31 22:36:22,debugging,VS Code,Atlas API,57,0,1,0,synthetic_simulation
+577,D009,Frontend,2025-08-01 07:39:39,coding,IntelliJ IDEA,Data Pipeline,52,0,1,0,synthetic_simulation
+578,D008,Frontend,2025-08-01 14:46:05,meeting,Microsoft Teams,Atlas API,24,0,0,0,synthetic_simulation
+579,D009,Frontend,2025-08-04 09:03:07,debugging,IntelliJ IDEA,Atlas API,40,0,0,0,synthetic_simulation
+580,D012,Backend,2025-08-04 10:29:04,documentation,Browser,Analytics Platform,40,0,0,0,synthetic_simulation
+581,D007,Frontend,2025-08-04 14:07:56,break,Away/Idle,Customer Portal,26,0,0,0,synthetic_simulation
+582,D005,Data,2025-08-04 15:43:26,coding,IntelliJ IDEA,Data Pipeline,58,0,1,0,synthetic_simulation
+583,D003,Platform,2025-08-05 12:33:01,debugging,PyCharm,Data Pipeline,35,0,0,0,synthetic_simulation
+584,D004,Data,2025-08-05 13:30:00,testing,VS Code,Atlas API,7,0,0,0,synthetic_simulation
+585,D020,Frontend,2025-08-05 13:57:43,break,Calendar,Atlas API,19,0,0,0,synthetic_simulation
+586,D005,Data,2025-08-05 14:51:01,coding,VS Code,Mobile App,50,0,1,0,synthetic_simulation
+587,D015,QA,2025-08-05 17:48:18,coding,VS Code,Atlas API,89,0,1,0,synthetic_simulation
+588,D011,Backend,2025-08-06 11:05:19,coding,PyCharm,Atlas API,87,0,1,0,synthetic_simulation
+589,D019,Backend,2025-08-06 13:42:04,debugging,PyCharm,Data Pipeline,38,0,0,0,synthetic_simulation
+590,D014,QA,2025-08-06 13:59:17,notification,Slack,Customer Portal,7,1,0,0,synthetic_simulation
+591,D013,QA,2025-08-06 17:07:07,break,Calendar,Mobile App,20,0,0,0,synthetic_simulation
+592,D012,Backend,2025-08-07 11:25:17,coding,VS Code,Analytics Platform,80,0,1,0,synthetic_simulation
+593,D020,Frontend,2025-08-07 11:26:17,testing,Terminal,Analytics Platform,60,0,0,0,synthetic_simulation
+594,D015,QA,2025-08-07 12:28:26,coding,VS Code,Mobile App,115,0,1,0,synthetic_simulation
+595,D014,QA,2025-08-07 14:25:38,debugging,VS Code,Analytics Platform,33,0,0,0,synthetic_simulation
+596,D013,QA,2025-08-08 11:33:06,documentation,Browser,Data Pipeline,40,0,0,0,synthetic_simulation
+597,D015,QA,2025-08-08 12:08:14,coding,IntelliJ IDEA,Customer Portal,15,0,0,0,synthetic_simulation
+598,D013,QA,2025-08-08 12:36:54,documentation,Confluence,Atlas API,21,0,0,0,synthetic_simulation
+599,D008,Frontend,2025-08-08 22:07:10,meeting,Google Meet,Customer Portal,90,1,0,0,synthetic_simulation
+600,D004,Data,2025-08-11 10:02:22,debugging,VS Code,Atlas API,51,0,1,0,synthetic_simulation
+601,D011,Backend,2025-08-11 10:42:43,meeting,Zoom,Analytics Platform,28,0,0,0,synthetic_simulation
+602,D016,Analytics,2025-08-11 15:50:53,meeting,Zoom,Analytics Platform,34,0,0,0,synthetic_simulation
+603,D001,Platform,2025-08-11 17:31:40,coding,PyCharm,Atlas API,103,0,1,0,synthetic_simulation
+604,D017,Analytics,2025-08-11 19:55:58,notification,Slack,Data Pipeline,6,1,0,0,synthetic_simulation
+605,D019,Backend,2025-08-11 23:33:13,meeting,Microsoft Teams,Atlas API,76,0,0,0,synthetic_simulation
+606,D007,Frontend,2025-08-12 11:54:54,meeting,Microsoft Teams,Mobile App,33,0,0,0,synthetic_simulation
+607,D003,Platform,2025-08-12 12:28:40,coding,PyCharm,Atlas API,119,0,1,0,synthetic_simulation
+608,D001,Platform,2025-08-13 16:40:38,code_review,GitHub,Customer Portal,49,0,0,0,synthetic_simulation
+609,D001,Platform,2025-08-14 10:30:50,meeting,Google Meet,Customer Portal,16,0,0,1,synthetic_simulation
+610,D009,Frontend,2025-08-14 11:10:37,testing,PyCharm,Mobile App,42,0,0,0,synthetic_simulation
+611,D006,Data,2025-08-14 16:16:11,code_review,GitLab,Atlas API,45,0,0,0,synthetic_simulation
+612,D018,Platform,2025-08-15 08:31:33,code_review,GitHub,Mobile App,46,0,0,0,synthetic_simulation
+613,D017,Analytics,2025-08-15 14:47:25,break,Away/Idle,Data Pipeline,22,0,0,0,synthetic_simulation
+614,D020,Frontend,2025-08-17 11:10:17,notification,Microsoft Teams,Data Pipeline,4,1,0,0,synthetic_simulation
+615,D012,Backend,2025-08-18 10:34:49,coding,PyCharm,Customer Portal,81,0,1,0,synthetic_simulation
+616,D002,Platform,2025-08-18 12:42:06,coding,PyCharm,Mobile App,101,0,1,0,synthetic_simulation
+617,D017,Analytics,2025-08-18 14:18:55,debugging,IntelliJ IDEA,Mobile App,52,0,1,0,synthetic_simulation
+618,D009,Frontend,2025-08-19 09:04:01,notification,Slack,Mobile App,1,1,0,0,synthetic_simulation
+619,D011,Backend,2025-08-19 11:09:04,coding,IntelliJ IDEA,Atlas API,110,0,1,0,synthetic_simulation
+620,D004,Data,2025-08-19 11:41:11,testing,Terminal,Customer Portal,7,0,0,0,synthetic_simulation
+621,D019,Backend,2025-08-19 12:46:05,documentation,Confluence,Analytics Platform,5,0,0,0,synthetic_simulation
+622,D018,Platform,2025-08-19 15:05:42,notification,Microsoft Teams,Atlas API,1,1,0,0,synthetic_simulation
+623,D018,Platform,2025-08-19 15:44:52,coding,PyCharm,Data Pipeline,88,0,1,1,synthetic_simulation
+624,D004,Data,2025-08-20 12:28:40,code_review,GitLab,Customer Portal,15,0,0,0,synthetic_simulation
+625,D009,Frontend,2025-08-20 14:28:57,meeting,Microsoft Teams,Data Pipeline,76,0,0,0,synthetic_simulation
+626,D004,Data,2025-08-20 14:37:40,debugging,PyCharm,Customer Portal,69,0,1,0,synthetic_simulation
+627,D015,QA,2025-08-21 18:47:15,code_review,GitHub,Analytics Platform,33,0,0,0,synthetic_simulation
+628,D015,QA,2025-08-21 22:27:17,testing,VS Code,Atlas API,22,0,0,1,synthetic_simulation
+629,D014,QA,2025-08-24 10:22:57,testing,VS Code,Atlas API,43,0,0,0,synthetic_simulation
+630,D017,Analytics,2025-08-24 18:14:33,debugging,PyCharm,Customer Portal,38,0,0,0,synthetic_simulation
+631,D005,Data,2025-08-25 08:29:15,meeting,Microsoft Teams,Atlas API,60,0,0,0,synthetic_simulation
+632,D012,Backend,2025-08-25 09:47:05,notification,Email,Data Pipeline,6,1,0,0,synthetic_simulation
+633,D003,Platform,2025-08-25 12:10:23,notification,Microsoft Teams,Mobile App,6,1,0,0,synthetic_simulation
+634,D011,Backend,2025-08-25 12:56:54,documentation,Notion,Mobile App,30,0,0,0,synthetic_simulation
+635,D018,Platform,2025-08-25 14:26:09,coding,PyCharm,Customer Portal,16,0,0,0,synthetic_simulation
+636,D007,Frontend,2025-08-25 15:49:39,debugging,VS Code,Atlas API,47,0,1,0,synthetic_simulation
+637,D019,Backend,2025-08-26 10:01:06,testing,VS Code,Analytics Platform,7,0,0,0,synthetic_simulation
+638,D006,Data,2025-08-26 13:40:53,documentation,Browser,Data Pipeline,6,0,0,0,synthetic_simulation
+639,D012,Backend,2025-08-26 15:03:08,code_review,GitHub,Customer Portal,33,0,0,0,synthetic_simulation
+640,D004,Data,2025-08-26 16:35:13,testing,VS Code,Analytics Platform,20,0,0,0,synthetic_simulation
+641,D001,Platform,2025-08-26 22:13:05,notification,Slack,Analytics Platform,8,1,0,0,synthetic_simulation
+642,D016,Analytics,2025-08-27 13:13:28,coding,IntelliJ IDEA,Data Pipeline,70,0,1,0,synthetic_simulation
+643,D019,Backend,2025-08-27 15:30:50,notification,Microsoft Teams,Atlas API,6,1,0,0,synthetic_simulation
+644,D007,Frontend,2025-08-28 09:45:20,coding,VS Code,Customer Portal,40,0,0,0,synthetic_simulation
+645,D015,QA,2025-08-28 13:17:52,coding,VS Code,Atlas API,72,0,1,0,synthetic_simulation
+646,D009,Frontend,2025-08-28 14:52:58,notification,Slack,Mobile App,4,1,0,0,synthetic_simulation
+647,D016,Analytics,2025-08-28 15:47:43,code_review,GitHub,Analytics Platform,16,0,0,0,synthetic_simulation
+648,D001,Platform,2025-08-29 13:44:51,coding,VS Code,Atlas API,31,0,0,0,synthetic_simulation
+649,D013,QA,2025-08-29 14:47:58,coding,IntelliJ IDEA,Analytics Platform,108,0,1,0,synthetic_simulation
+650,D002,Platform,2025-08-29 15:03:17,meeting,Google Meet,Customer Portal,84,0,0,0,synthetic_simulation
+651,D017,Analytics,2025-09-01 09:05:26,coding,IntelliJ IDEA,Customer Portal,22,0,0,0,synthetic_simulation
+652,D005,Data,2025-09-01 11:58:57,coding,VS Code,Analytics Platform,94,0,1,0,synthetic_simulation
+653,D011,Backend,2025-09-01 12:42:37,notification,Slack,Mobile App,2,1,0,0,synthetic_simulation
+654,D012,Backend,2025-09-01 13:39:42,coding,PyCharm,Data Pipeline,104,0,1,0,synthetic_simulation
+655,D002,Platform,2025-09-01 14:26:30,debugging,IntelliJ IDEA,Data Pipeline,18,0,0,0,synthetic_simulation
+656,D014,QA,2025-09-02 07:40:27,coding,IntelliJ IDEA,Atlas API,56,0,1,0,synthetic_simulation
+657,D016,Analytics,2025-09-02 08:45:04,coding,PyCharm,Customer Portal,47,0,1,0,synthetic_simulation
+658,D015,QA,2025-09-02 10:15:07,testing,PyCharm,Mobile App,52,0,0,0,synthetic_simulation
+659,D008,Frontend,2025-09-02 10:54:57,coding,VS Code,Atlas API,100,0,1,0,synthetic_simulation
+660,D017,Analytics,2025-09-02 15:02:32,coding,IntelliJ IDEA,Atlas API,68,0,1,0,synthetic_simulation
+661,D005,Data,2025-09-02 16:58:56,coding,VS Code,Customer Portal,33,0,0,0,synthetic_simulation
+662,D006,Data,2025-09-03 10:07:53,coding,PyCharm,Customer Portal,25,0,0,0,synthetic_simulation
+663,D020,Frontend,2025-09-03 11:51:59,testing,Terminal,Data Pipeline,49,0,0,0,synthetic_simulation
+664,D001,Platform,2025-09-03 11:53:57,coding,IntelliJ IDEA,Data Pipeline,80,0,1,0,synthetic_simulation
+665,D018,Platform,2025-09-03 12:59:56,break,Away/Idle,Mobile App,10,0,0,0,synthetic_simulation
+666,D015,QA,2025-09-03 15:35:19,testing,VS Code,Analytics Platform,25,0,0,0,synthetic_simulation
+667,D019,Backend,2025-09-03 16:58:04,break,Calendar,Atlas API,9,0,0,0,synthetic_simulation
+668,D017,Analytics,2025-09-04 09:50:56,documentation,Notion,Data Pipeline,39,0,0,0,synthetic_simulation
+669,D011,Backend,2025-09-04 11:42:23,meeting,Google Meet,Analytics Platform,63,1,0,0,synthetic_simulation
+670,D006,Data,2025-09-04 13:47:31,testing,Terminal,Data Pipeline,44,0,0,0,synthetic_simulation
+671,D002,Platform,2025-09-04 18:28:13,coding,IntelliJ IDEA,Analytics Platform,49,0,1,0,synthetic_simulation
+672,D007,Frontend,2025-09-04 20:03:19,coding,PyCharm,Analytics Platform,68,0,1,0,synthetic_simulation
+673,D017,Analytics,2025-09-04 20:44:42,documentation,Confluence,Customer Portal,27,0,0,0,synthetic_simulation
+674,D002,Platform,2025-09-05 08:53:10,coding,PyCharm,Analytics Platform,95,0,1,0,synthetic_simulation
+675,D003,Platform,2025-09-05 10:16:37,code_review,GitHub,Data Pipeline,28,0,0,0,synthetic_simulation
+676,D008,Frontend,2025-09-05 10:25:48,testing,Terminal,Data Pipeline,12,0,0,0,synthetic_simulation
+677,D010,Backend,2025-09-05 11:10:58,testing,VS Code,Data Pipeline,40,0,0,0,synthetic_simulation
+678,D008,Frontend,2025-09-05 13:48:12,coding,IntelliJ IDEA,Atlas API,27,0,0,0,synthetic_simulation
+679,D018,Platform,2025-09-05 15:43:35,code_review,GitLab,Data Pipeline,48,0,0,0,synthetic_simulation
+680,D003,Platform,2025-09-05 17:49:40,testing,VS Code,Analytics Platform,25,0,0,0,synthetic_simulation
+681,D017,Analytics,2025-09-05 17:56:08,coding,PyCharm,Customer Portal,67,0,1,0,synthetic_simulation
+682,D006,Data,2025-09-08 10:23:46,break,Away/Idle,Customer Portal,26,0,0,0,synthetic_simulation
+683,D012,Backend,2025-09-09 08:44:22,break,Away/Idle,Data Pipeline,12,0,0,0,synthetic_simulation
+684,D014,QA,2025-09-09 11:31:04,coding,IntelliJ IDEA,Atlas API,73,0,1,0,synthetic_simulation
+685,D007,Frontend,2025-09-09 13:42:17,coding,IntelliJ IDEA,Mobile App,111,0,1,0,synthetic_simulation
+686,D013,QA,2025-09-09 16:55:21,coding,IntelliJ IDEA,Customer Portal,32,0,0,0,synthetic_simulation
+687,D010,Backend,2025-09-10 09:57:22,notification,Slack,Atlas API,7,1,0,0,synthetic_simulation
+688,D007,Frontend,2025-09-10 10:41:33,coding,PyCharm,Data Pipeline,112,0,1,0,synthetic_simulation
+689,D018,Platform,2025-09-10 11:10:36,meeting,Zoom,Mobile App,54,0,0,0,synthetic_simulation
+690,D018,Platform,2025-09-10 12:13:30,coding,VS Code,Atlas API,116,0,1,1,synthetic_simulation
+691,D009,Frontend,2025-09-10 12:41:46,coding,VS Code,Analytics Platform,89,0,1,0,synthetic_simulation
+692,D010,Backend,2025-09-10 15:29:06,testing,PyCharm,Analytics Platform,20,0,0,0,synthetic_simulation
+693,D019,Backend,2025-09-10 15:46:38,code_review,GitLab,Customer Portal,43,0,0,0,synthetic_simulation
+694,D007,Frontend,2025-09-10 16:36:02,coding,PyCharm,Analytics Platform,40,0,0,0,synthetic_simulation
+695,D007,Frontend,2025-09-11 10:43:31,debugging,IntelliJ IDEA,Customer Portal,30,0,0,1,synthetic_simulation
+696,D018,Platform,2025-09-11 12:25:11,notification,Email,Analytics Platform,6,1,0,0,synthetic_simulation
+697,D012,Backend,2025-09-11 13:11:22,debugging,PyCharm,Customer Portal,34,0,0,0,synthetic_simulation
+698,D001,Platform,2025-09-11 13:29:50,break,Away/Idle,Analytics Platform,21,0,0,0,synthetic_simulation
+699,D014,QA,2025-09-11 13:52:42,notification,Email,Analytics Platform,8,1,0,0,synthetic_simulation
+700,D017,Analytics,2025-09-11 14:47:44,coding,VS Code,Atlas API,97,0,1,0,synthetic_simulation
+701,D004,Data,2025-09-11 15:04:02,coding,VS Code,Mobile App,63,0,1,0,synthetic_simulation
+702,D019,Backend,2025-09-11 15:20:00,documentation,Notion,Analytics Platform,41,0,0,0,synthetic_simulation
+703,D005,Data,2025-09-11 23:22:30,coding,IntelliJ IDEA,Analytics Platform,78,0,1,0,synthetic_simulation
+704,D001,Platform,2025-09-12 11:54:55,coding,IntelliJ IDEA,Data Pipeline,43,0,0,0,synthetic_simulation
+705,D010,Backend,2025-09-12 11:56:22,coding,PyCharm,Data Pipeline,92,0,1,0,synthetic_simulation
+706,D007,Frontend,2025-09-12 12:07:26,testing,VS Code,Customer Portal,21,0,0,0,synthetic_simulation
+707,D016,Analytics,2025-09-15 14:02:43,notification,Microsoft Teams,Data Pipeline,5,1,0,0,synthetic_simulation
+708,D016,Analytics,2025-09-15 14:34:51,documentation,Browser,Customer Portal,32,0,0,1,synthetic_simulation
+709,D003,Platform,2025-09-15 15:28:32,coding,VS Code,Atlas API,90,0,1,0,synthetic_simulation
+710,D009,Frontend,2025-09-15 16:37:23,coding,IntelliJ IDEA,Mobile App,89,0,1,0,synthetic_simulation
+711,D009,Frontend,2025-09-16 12:28:09,notification,Slack,Atlas API,1,1,0,1,synthetic_simulation
+712,D017,Analytics,2025-09-16 13:19:00,code_review,GitLab,Atlas API,31,0,0,0,synthetic_simulation
+713,D003,Platform,2025-09-16 20:56:45,coding,IntelliJ IDEA,Data Pipeline,93,0,1,0,synthetic_simulation
+714,D012,Backend,2025-09-17 11:44:28,testing,Terminal,Mobile App,34,0,0,0,synthetic_simulation
+715,D009,Frontend,2025-09-17 15:29:46,meeting,Microsoft Teams,Analytics Platform,88,1,0,0,synthetic_simulation
+716,D007,Frontend,2025-09-17 15:58:17,notification,Slack,Analytics Platform,3,1,0,0,synthetic_simulation
+717,D007,Frontend,2025-09-17 19:10:03,coding,IntelliJ IDEA,Atlas API,20,0,0,1,synthetic_simulation
+718,D018,Platform,2025-09-18 09:38:18,meeting,Zoom,Atlas API,29,0,0,0,synthetic_simulation
+719,D015,QA,2025-09-18 10:29:22,code_review,GitLab,Analytics Platform,37,0,0,0,synthetic_simulation
+720,D009,Frontend,2025-09-18 13:14:37,coding,IntelliJ IDEA,Atlas API,28,0,0,0,synthetic_simulation
+721,D015,QA,2025-09-19 09:31:02,testing,Terminal,Mobile App,41,0,0,0,synthetic_simulation
+722,D017,Analytics,2025-09-19 10:11:35,documentation,Browser,Data Pipeline,18,0,0,0,synthetic_simulation
+723,D006,Data,2025-09-19 15:07:23,notification,Slack,Analytics Platform,1,1,0,0,synthetic_simulation
+724,D014,QA,2025-09-19 15:54:19,code_review,GitHub,Data Pipeline,22,0,0,0,synthetic_simulation
+725,D008,Frontend,2025-09-19 22:02:40,debugging,IntelliJ IDEA,Atlas API,33,0,0,0,synthetic_simulation
+726,D015,QA,2025-09-21 15:15:14,coding,VS Code,Analytics Platform,107,0,1,0,synthetic_simulation
+727,D004,Data,2025-09-22 08:34:05,notification,Microsoft Teams,Customer Portal,1,1,0,0,synthetic_simulation
+728,D010,Backend,2025-09-22 11:34:36,coding,VS Code,Customer Portal,118,0,1,0,synthetic_simulation
+729,D005,Data,2025-09-22 15:07:48,testing,VS Code,Analytics Platform,39,0,0,0,synthetic_simulation
+730,D016,Analytics,2025-09-22 16:42:31,documentation,Confluence,Customer Portal,7,0,0,0,synthetic_simulation
+731,D014,QA,2025-09-23 09:28:36,testing,PyCharm,Customer Portal,28,0,0,0,synthetic_simulation
+732,D020,Frontend,2025-09-23 10:00:48,coding,IntelliJ IDEA,Analytics Platform,86,0,1,0,synthetic_simulation
+733,D013,QA,2025-09-23 11:25:05,notification,Slack,Mobile App,6,1,0,0,synthetic_simulation
+734,D019,Backend,2025-09-23 13:04:43,coding,IntelliJ IDEA,Analytics Platform,89,0,1,0,synthetic_simulation
+735,D019,Backend,2025-09-23 14:35:04,coding,IntelliJ IDEA,Mobile App,22,0,0,0,synthetic_simulation
+736,D008,Frontend,2025-09-23 14:43:44,documentation,Browser,Mobile App,33,0,0,0,synthetic_simulation
+737,D017,Analytics,2025-09-23 16:55:28,code_review,GitHub,Customer Portal,42,0,0,0,synthetic_simulation
+738,D016,Analytics,2025-09-24 09:35:08,testing,Terminal,Mobile App,20,0,0,0,synthetic_simulation
+739,D020,Frontend,2025-09-24 10:56:13,testing,Terminal,Customer Portal,58,0,0,0,synthetic_simulation
+740,D003,Platform,2025-09-24 12:24:11,coding,IntelliJ IDEA,Customer Portal,34,0,0,0,synthetic_simulation
+741,D013,QA,2025-09-24 12:35:01,coding,VS Code,Customer Portal,95,0,1,0,synthetic_simulation
+742,D003,Platform,2025-09-24 12:39:21,code_review,GitLab,Analytics Platform,7,0,0,0,synthetic_simulation
+743,D020,Frontend,2025-09-24 12:42:15,documentation,Browser,Analytics Platform,30,0,0,0,synthetic_simulation
+744,D001,Platform,2025-09-24 15:42:41,coding,VS Code,Analytics Platform,65,0,1,0,synthetic_simulation
+745,D018,Platform,2025-09-25 10:03:43,debugging,VS Code,Analytics Platform,64,0,1,0,synthetic_simulation
+746,D006,Data,2025-09-25 10:13:17,meeting,Microsoft Teams,Mobile App,71,0,0,0,synthetic_simulation
+747,D010,Backend,2025-09-25 12:52:03,code_review,GitHub,Atlas API,35,0,0,0,synthetic_simulation
+748,D003,Platform,2025-09-25 17:18:05,documentation,Confluence,Analytics Platform,13,0,0,0,synthetic_simulation
+749,D009,Frontend,2025-09-25 23:51:01,coding,IntelliJ IDEA,Customer Portal,113,0,1,0,synthetic_simulation
+750,D020,Frontend,2025-09-26 11:20:51,break,Calendar,Atlas API,19,0,0,0,synthetic_simulation
+751,D018,Platform,2025-09-26 12:11:52,meeting,Google Meet,Analytics Platform,36,0,0,0,synthetic_simulation
+752,D019,Backend,2025-09-26 12:22:04,coding,PyCharm,Data Pipeline,48,0,1,0,synthetic_simulation
+753,D001,Platform,2025-09-27 14:50:08,code_review,GitHub,Analytics Platform,18,0,0,0,synthetic_simulation
+754,D017,Analytics,2025-09-28 15:24:56,testing,Terminal,Customer Portal,6,0,0,0,synthetic_simulation
+755,D019,Backend,2025-09-29 07:13:49,debugging,IntelliJ IDEA,Atlas API,29,0,0,0,synthetic_simulation
+756,D016,Analytics,2025-09-29 09:13:37,coding,IntelliJ IDEA,Analytics Platform,20,0,0,0,synthetic_simulation
+757,D020,Frontend,2025-09-29 10:37:15,code_review,GitLab,Atlas API,5,0,0,0,synthetic_simulation
+758,D014,QA,2025-09-29 13:12:59,debugging,VS Code,Mobile App,12,0,0,0,synthetic_simulation
+759,D012,Backend,2025-09-29 14:57:46,meeting,Microsoft Teams,Atlas API,46,1,0,0,synthetic_simulation
+760,D001,Platform,2025-09-30 08:01:05,coding,VS Code,Mobile App,27,0,0,0,synthetic_simulation
+761,D010,Backend,2025-10-01 10:19:55,break,Away/Idle,Mobile App,16,0,0,0,synthetic_simulation
+762,D006,Data,2025-10-01 11:08:51,coding,PyCharm,Atlas API,26,0,0,0,synthetic_simulation
+763,D015,QA,2025-10-01 12:17:37,coding,IntelliJ IDEA,Mobile App,50,0,1,0,synthetic_simulation
+764,D011,Backend,2025-10-01 12:46:10,code_review,GitHub,Atlas API,37,0,0,0,synthetic_simulation
+765,D019,Backend,2025-10-01 17:33:00,documentation,Confluence,Customer Portal,28,0,0,0,synthetic_simulation
+766,D005,Data,2025-10-02 15:06:55,code_review,GitLab,Atlas API,19,0,0,0,synthetic_simulation
+767,D005,Data,2025-10-02 15:31:02,break,Calendar,Customer Portal,27,0,0,1,synthetic_simulation
+768,D001,Platform,2025-10-03 11:00:28,coding,PyCharm,Atlas API,28,0,0,0,synthetic_simulation
+769,D016,Analytics,2025-10-03 11:13:20,meeting,Zoom,Mobile App,38,1,0,0,synthetic_simulation
+770,D008,Frontend,2025-10-03 16:26:26,meeting,Microsoft Teams,Data Pipeline,31,0,0,0,synthetic_simulation
+771,D004,Data,2025-10-04 12:58:06,coding,IntelliJ IDEA,Mobile App,45,0,1,0,synthetic_simulation
+772,D008,Frontend,2025-10-06 09:24:19,code_review,GitLab,Data Pipeline,49,0,0,0,synthetic_simulation
+773,D019,Backend,2025-10-06 10:44:21,debugging,IntelliJ IDEA,Mobile App,35,0,0,0,synthetic_simulation
+774,D019,Backend,2025-10-06 13:03:28,coding,VS Code,Mobile App,108,0,1,1,synthetic_simulation
+775,D002,Platform,2025-10-06 13:03:31,notification,Slack,Analytics Platform,8,1,0,0,synthetic_simulation
+776,D002,Platform,2025-10-06 14:13:47,coding,IntelliJ IDEA,Atlas API,35,0,0,1,synthetic_simulation
+777,D016,Analytics,2025-10-07 09:06:17,code_review,GitLab,Customer Portal,50,0,0,0,synthetic_simulation
+778,D003,Platform,2025-10-07 12:43:15,debugging,VS Code,Data Pipeline,63,0,1,0,synthetic_simulation
+779,D007,Frontend,2025-10-07 12:47:09,debugging,IntelliJ IDEA,Customer Portal,13,0,0,0,synthetic_simulation
+780,D012,Backend,2025-10-07 12:47:12,code_review,GitLab,Atlas API,26,0,0,0,synthetic_simulation
+781,D009,Frontend,2025-10-07 12:56:36,coding,IntelliJ IDEA,Data Pipeline,42,0,0,0,synthetic_simulation
+782,D004,Data,2025-10-07 13:12:27,debugging,VS Code,Customer Portal,58,0,1,0,synthetic_simulation
+783,D003,Platform,2025-10-07 13:32:32,coding,VS Code,Data Pipeline,110,0,1,0,synthetic_simulation
+784,D004,Data,2025-10-08 10:26:41,testing,Terminal,Data Pipeline,55,0,0,0,synthetic_simulation
+785,D008,Frontend,2025-10-08 11:40:30,coding,VS Code,Data Pipeline,84,0,1,0,synthetic_simulation
+786,D020,Frontend,2025-10-08 13:11:36,documentation,Browser,Data Pipeline,32,0,0,0,synthetic_simulation
+787,D013,QA,2025-10-08 13:15:45,debugging,VS Code,Mobile App,47,0,1,0,synthetic_simulation
+788,D016,Analytics,2025-10-08 13:42:47,notification,Slack,Customer Portal,2,1,0,0,synthetic_simulation
+789,D002,Platform,2025-10-09 09:47:41,testing,Terminal,Mobile App,5,0,0,0,synthetic_simulation
+790,D015,QA,2025-10-09 12:29:17,coding,IntelliJ IDEA,Atlas API,68,0,1,0,synthetic_simulation
+791,D019,Backend,2025-10-09 13:02:21,debugging,IntelliJ IDEA,Data Pipeline,59,0,1,0,synthetic_simulation
+792,D002,Platform,2025-10-09 14:05:27,code_review,GitLab,Data Pipeline,34,0,0,0,synthetic_simulation
+793,D017,Analytics,2025-10-09 15:35:23,debugging,IntelliJ IDEA,Data Pipeline,71,0,1,0,synthetic_simulation
+794,D003,Platform,2025-10-10 07:16:06,coding,VS Code,Customer Portal,104,0,1,0,synthetic_simulation
+795,D014,QA,2025-10-13 08:37:05,coding,VS Code,Customer Portal,59,0,1,0,synthetic_simulation
+796,D011,Backend,2025-10-13 11:45:16,code_review,GitHub,Analytics Platform,33,0,0,0,synthetic_simulation
+797,D001,Platform,2025-10-13 11:57:06,debugging,PyCharm,Mobile App,73,0,1,0,synthetic_simulation
+798,D016,Analytics,2025-10-13 12:37:55,documentation,Notion,Mobile App,41,0,0,0,synthetic_simulation
+799,D020,Frontend,2025-10-13 17:56:21,coding,VS Code,Analytics Platform,57,0,1,0,synthetic_simulation
+800,D001,Platform,2025-10-14 11:34:10,notification,Slack,Customer Portal,5,1,0,0,synthetic_simulation
+801,D020,Frontend,2025-10-14 13:01:03,coding,IntelliJ IDEA,Analytics Platform,119,0,1,0,synthetic_simulation
+802,D007,Frontend,2025-10-14 17:02:51,documentation,Confluence,Customer Portal,29,0,0,0,synthetic_simulation
+803,D013,QA,2025-10-15 11:10:43,testing,Terminal,Atlas API,52,0,0,0,synthetic_simulation
+804,D012,Backend,2025-10-15 11:13:29,meeting,Zoom,Analytics Platform,90,0,0,0,synthetic_simulation
+805,D003,Platform,2025-10-15 11:45:06,coding,VS Code,Customer Portal,120,0,1,0,synthetic_simulation
+806,D018,Platform,2025-10-16 11:57:51,debugging,VS Code,Customer Portal,23,0,0,0,synthetic_simulation
+807,D004,Data,2025-10-16 12:13:03,code_review,GitLab,Analytics Platform,6,0,0,0,synthetic_simulation
+808,D003,Platform,2025-10-16 14:23:34,documentation,Notion,Data Pipeline,30,0,0,0,synthetic_simulation
+809,D017,Analytics,2025-10-17 12:35:44,coding,PyCharm,Atlas API,22,0,0,0,synthetic_simulation
+810,D007,Frontend,2025-10-17 12:39:12,coding,PyCharm,Data Pipeline,25,0,0,0,synthetic_simulation
+811,D014,QA,2025-10-17 13:26:55,code_review,GitLab,Atlas API,43,0,0,0,synthetic_simulation
+812,D018,Platform,2025-10-17 13:28:47,notification,Slack,Data Pipeline,3,1,0,0,synthetic_simulation
+813,D011,Backend,2025-10-18 13:35:43,testing,PyCharm,Atlas API,9,0,0,0,synthetic_simulation
+814,D013,QA,2025-10-19 16:09:08,code_review,GitHub,Analytics Platform,35,0,0,0,synthetic_simulation
+815,D020,Frontend,2025-10-20 08:50:05,code_review,GitLab,Analytics Platform,17,0,0,0,synthetic_simulation
+816,D010,Backend,2025-10-20 12:17:04,coding,VS Code,Analytics Platform,54,0,1,0,synthetic_simulation
+817,D017,Analytics,2025-10-20 21:16:20,coding,IntelliJ IDEA,Mobile App,81,0,1,0,synthetic_simulation
+818,D017,Analytics,2025-10-21 11:06:54,notification,Email,Atlas API,7,1,0,1,synthetic_simulation
+819,D020,Frontend,2025-10-21 12:24:02,break,Calendar,Atlas API,17,0,0,0,synthetic_simulation
+820,D001,Platform,2025-10-21 14:24:42,coding,VS Code,Analytics Platform,74,0,1,0,synthetic_simulation
+821,D009,Frontend,2025-10-21 15:32:48,debugging,PyCharm,Mobile App,71,0,1,0,synthetic_simulation
+822,D013,QA,2025-10-21 19:14:02,coding,PyCharm,Atlas API,94,0,1,0,synthetic_simulation
+823,D008,Frontend,2025-10-22 09:01:12,coding,IntelliJ IDEA,Mobile App,42,0,0,0,synthetic_simulation
+824,D003,Platform,2025-10-22 10:49:42,coding,IntelliJ IDEA,Atlas API,25,0,0,0,synthetic_simulation
+825,D009,Frontend,2025-10-22 14:07:50,documentation,Browser,Data Pipeline,10,0,0,0,synthetic_simulation
+826,D012,Backend,2025-10-22 14:40:23,debugging,VS Code,Mobile App,12,0,0,0,synthetic_simulation
+827,D008,Frontend,2025-10-23 13:15:24,code_review,GitHub,Analytics Platform,48,0,0,0,synthetic_simulation
+828,D007,Frontend,2025-10-23 13:22:57,documentation,Confluence,Analytics Platform,19,0,0,0,synthetic_simulation
+829,D009,Frontend,2025-10-23 14:49:54,coding,PyCharm,Analytics Platform,91,0,1,0,synthetic_simulation
+830,D005,Data,2025-10-24 12:24:14,testing,VS Code,Data Pipeline,10,0,0,0,synthetic_simulation
+831,D017,Analytics,2025-10-24 14:23:31,coding,PyCharm,Atlas API,25,0,0,0,synthetic_simulation
+832,D008,Frontend,2025-10-24 22:24:20,debugging,VS Code,Atlas API,65,0,1,0,synthetic_simulation
+833,D003,Platform,2025-10-26 09:23:29,testing,Terminal,Customer Portal,43,0,0,0,synthetic_simulation
+834,D012,Backend,2025-10-27 10:03:34,break,Calendar,Mobile App,28,0,0,0,synthetic_simulation
+835,D017,Analytics,2025-10-27 10:38:29,coding,PyCharm,Mobile App,58,0,1,0,synthetic_simulation
+836,D017,Analytics,2025-10-27 10:43:13,code_review,GitHub,Data Pipeline,31,0,0,1,synthetic_simulation
+837,D002,Platform,2025-10-27 13:28:23,coding,IntelliJ IDEA,Atlas API,33,0,0,0,synthetic_simulation
+838,D018,Platform,2025-10-27 19:09:08,debugging,VS Code,Data Pipeline,27,0,0,0,synthetic_simulation
+839,D001,Platform,2025-10-28 13:31:58,testing,PyCharm,Data Pipeline,23,0,0,0,synthetic_simulation
+840,D005,Data,2025-10-28 17:23:17,documentation,Browser,Analytics Platform,15,0,0,0,synthetic_simulation
+841,D010,Backend,2025-10-29 08:12:26,notification,Email,Customer Portal,2,1,0,0,synthetic_simulation
+842,D014,QA,2025-10-29 19:01:26,debugging,VS Code,Data Pipeline,21,0,0,0,synthetic_simulation
+843,D007,Frontend,2025-10-30 09:35:29,documentation,Confluence,Data Pipeline,24,0,0,0,synthetic_simulation
+844,D005,Data,2025-10-30 13:57:07,testing,PyCharm,Analytics Platform,28,0,0,0,synthetic_simulation
+845,D015,QA,2025-10-30 14:10:52,debugging,IntelliJ IDEA,Atlas API,52,0,1,0,synthetic_simulation
+846,D016,Analytics,2025-10-30 17:23:06,coding,VS Code,Analytics Platform,71,0,1,0,synthetic_simulation
+847,D004,Data,2025-10-31 11:37:42,meeting,Google Meet,Atlas API,51,0,0,0,synthetic_simulation
+848,D016,Analytics,2025-10-31 13:22:00,break,Calendar,Data Pipeline,11,0,0,0,synthetic_simulation
+849,D012,Backend,2025-10-31 15:58:29,coding,VS Code,Analytics Platform,69,0,1,0,synthetic_simulation
+850,D014,QA,2025-10-31 21:10:52,testing,PyCharm,Data Pipeline,35,0,0,0,synthetic_simulation
+851,D008,Frontend,2025-11-01 15:04:36,notification,Microsoft Teams,Mobile App,4,1,0,0,synthetic_simulation
+852,D015,QA,2025-11-03 12:01:10,notification,Slack,Analytics Platform,2,1,0,0,synthetic_simulation
+853,D017,Analytics,2025-11-03 15:21:08,coding,VS Code,Analytics Platform,114,0,1,0,synthetic_simulation
+854,D008,Frontend,2025-11-03 15:52:21,testing,PyCharm,Data Pipeline,56,0,0,0,synthetic_simulation
+855,D001,Platform,2025-11-03 22:04:19,coding,VS Code,Atlas API,79,0,1,0,synthetic_simulation
+856,D005,Data,2025-11-04 16:59:05,notification,Email,Data Pipeline,3,1,0,0,synthetic_simulation
+857,D003,Platform,2025-11-05 08:35:10,debugging,IntelliJ IDEA,Mobile App,12,0,0,0,synthetic_simulation
+858,D016,Analytics,2025-11-05 12:03:40,debugging,IntelliJ IDEA,Analytics Platform,62,0,1,0,synthetic_simulation
+859,D001,Platform,2025-11-05 12:23:01,coding,PyCharm,Mobile App,79,0,1,0,synthetic_simulation
+860,D001,Platform,2025-11-05 13:44:45,notification,Microsoft Teams,Mobile App,8,1,0,1,synthetic_simulation
+861,D004,Data,2025-11-05 14:34:08,coding,VS Code,Data Pipeline,51,0,1,0,synthetic_simulation
+862,D010,Backend,2025-11-06 12:14:13,coding,PyCharm,Atlas API,49,0,1,0,synthetic_simulation
+863,D015,QA,2025-11-07 09:40:39,testing,VS Code,Atlas API,15,0,0,0,synthetic_simulation
+864,D019,Backend,2025-11-07 14:56:13,testing,Terminal,Data Pipeline,42,0,0,0,synthetic_simulation
+865,D019,Backend,2025-11-09 10:09:50,coding,VS Code,Analytics Platform,51,0,1,1,synthetic_simulation
+866,D014,QA,2025-11-09 13:57:33,meeting,Zoom,Analytics Platform,39,0,0,0,synthetic_simulation
+867,D001,Platform,2025-11-10 15:08:28,coding,IntelliJ IDEA,Data Pipeline,80,0,1,0,synthetic_simulation
+868,D010,Backend,2025-11-10 15:44:29,coding,IntelliJ IDEA,Data Pipeline,112,0,1,0,synthetic_simulation
+869,D003,Platform,2025-11-10 15:52:54,coding,PyCharm,Mobile App,57,0,1,0,synthetic_simulation
+870,D013,QA,2025-11-11 09:50:24,break,Away/Idle,Atlas API,26,0,0,0,synthetic_simulation
+871,D003,Platform,2025-11-11 11:19:12,coding,VS Code,Customer Portal,104,0,1,0,synthetic_simulation
+872,D011,Backend,2025-11-11 12:23:16,notification,Microsoft Teams,Mobile App,2,1,0,0,synthetic_simulation
+873,D009,Frontend,2025-11-13 10:13:56,testing,Terminal,Data Pipeline,31,0,0,0,synthetic_simulation
+874,D017,Analytics,2025-11-13 11:30:36,coding,VS Code,Atlas API,100,0,1,0,synthetic_simulation
+875,D003,Platform,2025-11-13 12:49:51,testing,PyCharm,Atlas API,32,0,0,0,synthetic_simulation
+876,D002,Platform,2025-11-14 09:27:35,meeting,Microsoft Teams,Atlas API,32,0,0,0,synthetic_simulation
+877,D012,Backend,2025-11-14 12:26:05,testing,Terminal,Data Pipeline,10,0,0,0,synthetic_simulation
+878,D008,Frontend,2025-11-14 13:12:14,coding,PyCharm,Mobile App,100,0,1,0,synthetic_simulation
+879,D012,Backend,2025-11-14 15:54:57,code_review,GitLab,Analytics Platform,28,0,0,0,synthetic_simulation
+880,D003,Platform,2025-11-16 10:02:39,coding,IntelliJ IDEA,Customer Portal,89,0,1,0,synthetic_simulation
+881,D007,Frontend,2025-11-17 10:01:31,notification,Microsoft Teams,Customer Portal,6,1,0,0,synthetic_simulation
+882,D003,Platform,2025-11-17 10:38:07,code_review,GitLab,Atlas API,25,0,0,0,synthetic_simulation
+883,D001,Platform,2025-11-17 11:40:15,notification,Email,Atlas API,7,1,0,0,synthetic_simulation
+884,D016,Analytics,2025-11-17 12:17:03,coding,VS Code,Mobile App,40,0,0,0,synthetic_simulation
+885,D012,Backend,2025-11-17 15:20:08,debugging,IntelliJ IDEA,Mobile App,65,0,1,0,synthetic_simulation
+886,D012,Backend,2025-11-18 10:58:56,meeting,Microsoft Teams,Mobile App,89,0,0,1,synthetic_simulation
+887,D018,Platform,2025-11-18 11:37:30,notification,Microsoft Teams,Mobile App,7,1,0,0,synthetic_simulation
+888,D016,Analytics,2025-11-18 15:25:05,testing,VS Code,Mobile App,44,0,0,0,synthetic_simulation
+889,D003,Platform,2025-11-19 13:13:46,coding,PyCharm,Atlas API,108,0,1,0,synthetic_simulation
+890,D011,Backend,2025-11-19 21:48:29,coding,PyCharm,Atlas API,42,0,0,0,synthetic_simulation
+891,D013,QA,2025-11-19 23:33:08,debugging,PyCharm,Atlas API,42,0,0,0,synthetic_simulation
+892,D015,QA,2025-11-21 13:35:00,notification,Slack,Data Pipeline,8,1,0,0,synthetic_simulation
+893,D001,Platform,2025-11-22 18:18:58,notification,Microsoft Teams,Data Pipeline,6,1,0,0,synthetic_simulation
+894,D008,Frontend,2025-11-23 18:59:39,debugging,VS Code,Customer Portal,17,0,0,0,synthetic_simulation
+895,D016,Analytics,2025-11-24 14:07:39,coding,VS Code,Mobile App,26,0,0,0,synthetic_simulation
+896,D014,QA,2025-11-25 12:58:18,code_review,GitHub,Analytics Platform,37,0,0,0,synthetic_simulation
+897,D013,QA,2025-11-26 11:18:20,coding,PyCharm,Customer Portal,37,0,0,0,synthetic_simulation
+898,D019,Backend,2025-11-26 14:08:43,notification,Microsoft Teams,Atlas API,7,1,0,0,synthetic_simulation
+899,D018,Platform,2025-11-26 14:16:16,debugging,PyCharm,Mobile App,42,0,0,0,synthetic_simulation
+900,D006,Data,2025-11-27 14:02:10,code_review,GitLab,Mobile App,6,0,0,0,synthetic_simulation
+901,D018,Platform,2025-11-27 15:32:32,documentation,Notion,Analytics Platform,43,0,0,0,synthetic_simulation
+902,D010,Backend,2025-11-27 15:36:57,coding,IntelliJ IDEA,Mobile App,87,0,1,0,synthetic_simulation
+903,D015,QA,2025-11-27 20:09:25,coding,VS Code,Customer Portal,76,0,1,0,synthetic_simulation
+904,D005,Data,2025-11-28 08:05:56,testing,PyCharm,Analytics Platform,14,0,0,0,synthetic_simulation
+905,D009,Frontend,2025-11-28 10:32:53,notification,Microsoft Teams,Analytics Platform,1,1,0,0,synthetic_simulation
+906,D013,QA,2025-11-28 13:01:00,code_review,GitLab,Data Pipeline,34,0,0,0,synthetic_simulation
+907,D014,QA,2025-11-28 15:31:18,code_review,GitHub,Data Pipeline,30,0,0,0,synthetic_simulation
+908,D007,Frontend,2025-11-29 12:21:32,coding,IntelliJ IDEA,Atlas API,112,0,1,0,synthetic_simulation
+909,D005,Data,2025-11-29 14:27:25,notification,Microsoft Teams,Atlas API,4,1,0,0,synthetic_simulation
+910,D015,QA,2025-11-30 12:48:47,testing,PyCharm,Atlas API,20,0,0,0,synthetic_simulation
+911,D005,Data,2025-12-01 11:27:54,code_review,GitLab,Mobile App,33,0,0,0,synthetic_simulation
+912,D020,Frontend,2025-12-01 12:18:29,testing,Terminal,Analytics Platform,44,0,0,0,synthetic_simulation
+913,D001,Platform,2025-12-01 12:41:47,documentation,Browser,Data Pipeline,14,0,0,0,synthetic_simulation
+914,D014,QA,2025-12-01 13:51:30,code_review,GitLab,Mobile App,19,0,0,0,synthetic_simulation
+915,D013,QA,2025-12-01 15:54:01,coding,PyCharm,Data Pipeline,67,0,1,0,synthetic_simulation
+916,D007,Frontend,2025-12-01 17:35:26,coding,VS Code,Customer Portal,21,0,0,0,synthetic_simulation
+917,D010,Backend,2025-12-01 20:24:20,break,Away/Idle,Atlas API,14,0,0,0,synthetic_simulation
+918,D006,Data,2025-12-02 12:20:11,code_review,GitHub,Mobile App,23,0,0,0,synthetic_simulation
+919,D018,Platform,2025-12-02 15:59:43,break,Calendar,Data Pipeline,30,0,0,0,synthetic_simulation
+920,D008,Frontend,2025-12-02 19:09:02,break,Calendar,Mobile App,14,0,0,0,synthetic_simulation
+921,D020,Frontend,2025-12-03 09:08:32,testing,PyCharm,Customer Portal,21,0,0,0,synthetic_simulation
+922,D016,Analytics,2025-12-03 11:09:12,coding,IntelliJ IDEA,Analytics Platform,17,0,0,0,synthetic_simulation
+923,D006,Data,2025-12-03 13:33:51,code_review,GitHub,Data Pipeline,22,0,0,0,synthetic_simulation
+924,D004,Data,2025-12-03 13:53:06,coding,PyCharm,Atlas API,118,0,1,0,synthetic_simulation
+925,D011,Backend,2025-12-03 14:35:46,coding,PyCharm,Data Pipeline,76,0,1,0,synthetic_simulation
+926,D009,Frontend,2025-12-03 14:46:27,coding,IntelliJ IDEA,Atlas API,76,0,1,0,synthetic_simulation
+927,D009,Frontend,2025-12-03 14:58:20,testing,Terminal,Data Pipeline,13,0,0,1,synthetic_simulation
+928,D004,Data,2025-12-04 08:17:11,code_review,GitLab,Data Pipeline,48,0,0,0,synthetic_simulation
+929,D012,Backend,2025-12-04 18:01:22,coding,PyCharm,Data Pipeline,54,0,1,0,synthetic_simulation
+930,D008,Frontend,2025-12-05 10:39:32,coding,PyCharm,Mobile App,26,0,0,0,synthetic_simulation
+931,D016,Analytics,2025-12-05 11:01:07,debugging,VS Code,Atlas API,26,0,0,0,synthetic_simulation
+932,D006,Data,2025-12-05 12:03:35,coding,VS Code,Atlas API,115,0,1,0,synthetic_simulation
+933,D017,Analytics,2025-12-05 13:21:12,meeting,Zoom,Analytics Platform,73,0,0,0,synthetic_simulation
+934,D016,Analytics,2025-12-07 13:21:08,code_review,GitLab,Customer Portal,8,0,0,0,synthetic_simulation
+935,D005,Data,2025-12-08 11:59:31,notification,Slack,Analytics Platform,3,1,0,0,synthetic_simulation
+936,D007,Frontend,2025-12-08 14:15:10,code_review,GitLab,Customer Portal,17,0,0,0,synthetic_simulation
+937,D013,QA,2025-12-08 16:35:21,notification,Email,Atlas API,8,1,0,0,synthetic_simulation
+938,D012,Backend,2025-12-09 11:24:38,coding,PyCharm,Analytics Platform,113,0,1,0,synthetic_simulation
+939,D018,Platform,2025-12-09 12:22:15,meeting,Microsoft Teams,Customer Portal,90,0,0,0,synthetic_simulation
+940,D018,Platform,2025-12-10 14:31:51,testing,PyCharm,Atlas API,23,0,0,1,synthetic_simulation
+941,D007,Frontend,2025-12-10 15:05:10,coding,PyCharm,Analytics Platform,68,0,1,0,synthetic_simulation
+942,D009,Frontend,2025-12-10 15:34:08,coding,VS Code,Analytics Platform,105,0,1,0,synthetic_simulation
+943,D001,Platform,2025-12-11 09:22:21,coding,VS Code,Mobile App,83,0,1,0,synthetic_simulation
+944,D015,QA,2025-12-11 09:37:12,code_review,GitLab,Customer Portal,17,0,0,0,synthetic_simulation
+945,D008,Frontend,2025-12-11 11:53:07,notification,Microsoft Teams,Mobile App,2,1,0,0,synthetic_simulation
+946,D010,Backend,2025-12-11 14:46:26,notification,Email,Data Pipeline,6,1,0,0,synthetic_simulation
+947,D017,Analytics,2025-12-11 17:41:59,testing,PyCharm,Mobile App,21,0,0,0,synthetic_simulation
+948,D002,Platform,2025-12-12 10:02:44,debugging,PyCharm,Data Pipeline,10,0,0,0,synthetic_simulation
+949,D009,Frontend,2025-12-12 10:09:57,code_review,GitLab,Atlas API,6,0,0,0,synthetic_simulation
+950,D011,Backend,2025-12-12 12:21:24,coding,IntelliJ IDEA,Analytics Platform,89,0,1,0,synthetic_simulation
+951,D003,Platform,2025-12-12 15:20:28,break,Calendar,Analytics Platform,16,0,0,0,synthetic_simulation
+952,D019,Backend,2025-12-13 11:59:19,code_review,GitHub,Mobile App,21,0,0,0,synthetic_simulation
+953,D015,QA,2025-12-14 20:20:35,testing,PyCharm,Analytics Platform,35,0,0,0,synthetic_simulation
+954,D017,Analytics,2025-12-15 15:26:38,coding,IntelliJ IDEA,Mobile App,51,0,1,0,synthetic_simulation
+955,D012,Backend,2025-12-15 16:02:32,coding,PyCharm,Mobile App,29,0,0,0,synthetic_simulation
+956,D002,Platform,2025-12-15 22:55:16,code_review,GitHub,Atlas API,48,0,0,0,synthetic_simulation
+957,D018,Platform,2025-12-16 13:28:36,debugging,VS Code,Data Pipeline,38,0,0,0,synthetic_simulation
+958,D012,Backend,2025-12-16 13:40:23,notification,Email,Customer Portal,5,1,0,0,synthetic_simulation
+959,D011,Backend,2025-12-16 14:04:36,testing,VS Code,Mobile App,26,0,0,0,synthetic_simulation
+960,D014,QA,2025-12-16 14:58:17,debugging,VS Code,Mobile App,23,0,0,0,synthetic_simulation
+961,D019,Backend,2025-12-16 15:38:57,coding,VS Code,Data Pipeline,73,0,1,0,synthetic_simulation
+962,D006,Data,2025-12-17 11:34:02,debugging,IntelliJ IDEA,Mobile App,65,0,1,0,synthetic_simulation
+963,D019,Backend,2025-12-17 12:41:42,documentation,Browser,Data Pipeline,6,0,0,0,synthetic_simulation
+964,D013,QA,2025-12-17 12:46:21,coding,PyCharm,Mobile App,27,0,0,0,synthetic_simulation
+965,D013,QA,2025-12-17 13:31:48,coding,IntelliJ IDEA,Customer Portal,70,0,1,0,synthetic_simulation
+966,D014,QA,2025-12-17 16:28:24,coding,IntelliJ IDEA,Mobile App,112,0,1,0,synthetic_simulation
+967,D011,Backend,2025-12-18 10:57:09,testing,VS Code,Data Pipeline,54,0,0,0,synthetic_simulation
+968,D011,Backend,2025-12-18 14:05:18,coding,PyCharm,Customer Portal,56,0,1,1,synthetic_simulation
+969,D019,Backend,2025-12-18 15:45:37,coding,PyCharm,Analytics Platform,69,0,1,0,synthetic_simulation
+970,D010,Backend,2025-12-19 07:36:54,notification,Microsoft Teams,Customer Portal,8,1,0,0,synthetic_simulation
+971,D007,Frontend,2025-12-19 08:51:14,notification,Slack,Analytics Platform,5,1,0,0,synthetic_simulation
+972,D009,Frontend,2025-12-19 10:36:58,notification,Slack,Mobile App,6,1,0,0,synthetic_simulation
+973,D009,Frontend,2025-12-19 14:55:18,code_review,GitLab,Data Pipeline,38,0,0,1,synthetic_simulation
+974,D007,Frontend,2025-12-21 13:55:22,debugging,IntelliJ IDEA,Data Pipeline,23,0,0,0,synthetic_simulation
+975,D010,Backend,2025-12-22 14:39:24,documentation,Notion,Customer Portal,39,0,0,0,synthetic_simulation
+976,D011,Backend,2025-12-22 15:47:39,notification,Slack,Analytics Platform,3,1,0,0,synthetic_simulation
+977,D009,Frontend,2025-12-22 22:10:23,meeting,Google Meet,Analytics Platform,26,0,0,0,synthetic_simulation
+978,D016,Analytics,2025-12-23 11:46:46,coding,PyCharm,Analytics Platform,107,0,1,0,synthetic_simulation
+979,D016,Analytics,2025-12-23 13:46:29,coding,VS Code,Atlas API,33,0,0,0,synthetic_simulation
+980,D016,Analytics,2025-12-23 18:02:11,code_review,GitLab,Mobile App,44,0,0,1,synthetic_simulation
+981,D013,QA,2025-12-24 12:01:41,notification,Email,Customer Portal,6,1,0,0,synthetic_simulation
+982,D009,Frontend,2025-12-24 13:45:11,coding,VS Code,Analytics Platform,30,0,0,0,synthetic_simulation
+983,D011,Backend,2025-12-24 14:16:44,documentation,Confluence,Atlas API,21,0,0,0,synthetic_simulation
+984,D001,Platform,2025-12-24 14:47:14,coding,PyCharm,Data Pipeline,70,0,1,0,synthetic_simulation
+985,D009,Frontend,2025-12-24 18:36:50,meeting,Google Meet,Data Pipeline,45,0,0,0,synthetic_simulation
+986,D020,Frontend,2025-12-25 11:10:37,coding,IntelliJ IDEA,Analytics Platform,69,0,1,0,synthetic_simulation
+987,D018,Platform,2025-12-25 12:03:20,code_review,GitHub,Analytics Platform,5,0,0,0,synthetic_simulation
+988,D019,Backend,2025-12-25 13:11:14,notification,Email,Atlas API,6,1,0,0,synthetic_simulation
+989,D001,Platform,2025-12-25 13:35:37,testing,VS Code,Data Pipeline,25,0,0,0,synthetic_simulation
+990,D003,Platform,2025-12-26 07:16:21,coding,IntelliJ IDEA,Data Pipeline,99,0,1,0,synthetic_simulation
+991,D012,Backend,2025-12-26 10:59:05,code_review,GitLab,Customer Portal,39,0,0,0,synthetic_simulation
+992,D016,Analytics,2025-12-26 11:05:07,testing,PyCharm,Customer Portal,8,0,0,0,synthetic_simulation
+993,D017,Analytics,2025-12-26 13:17:40,coding,IntelliJ IDEA,Data Pipeline,58,0,1,0,synthetic_simulation
+994,D019,Backend,2025-12-26 14:37:07,coding,PyCharm,Mobile App,99,0,1,0,synthetic_simulation
+995,D017,Analytics,2025-12-26 14:58:29,coding,IntelliJ IDEA,Analytics Platform,85,0,1,0,synthetic_simulation
+996,D017,Analytics,2025-12-28 11:45:27,coding,IntelliJ IDEA,Analytics Platform,15,0,0,0,synthetic_simulation
+997,D017,Analytics,2025-12-29 10:44:32,notification,Email,Atlas API,2,1,0,1,synthetic_simulation
+998,D007,Frontend,2025-12-30 13:32:58,testing,VS Code,Data Pipeline,25,0,0,0,synthetic_simulation
+999,D011,Backend,2025-12-30 20:09:29,meeting,Zoom,Customer Portal,79,0,0,0,synthetic_simulation
+1000,D018,Platform,2025-12-31 15:50:34,testing,PyCharm,Data Pipeline,11,0,0,0,synthetic_simulation
