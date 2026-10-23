@@ -1,0 +1,41 @@
+COGNISTREAM — EXPLORATORY DATA ANALYSIS
+=============================================
+Rows: 1000
+Columns: 12
+Unique developers: 20
+Unique teams: 6
+Date range: 2025-01-01 12:16:57 to 2025-12-31 15:50:34
+
+NUMERICAL SUMMARY
+       duration_minutes  flow_state_proxy
+count       1000.000000       1000.000000
+mean          43.317000          0.315000
+std           31.825452          0.464748
+min            1.000000          0.000000
+25%           19.000000          0.000000
+50%           35.500000          0.000000
+75%           64.000000          1.000000
+max          120.000000          1.000000
+
+MISSING VALUES
+event_id               0
+developer_id           0
+team                   0
+event_timestamp        0
+activity_type          0
+application            0
+project_name           0
+duration_minutes       0
+interruption_flag      0
+flow_state_proxy       0
+context_switch_flag    0
+data_source            0
+
+CHART FINDINGS
+Most common activity type: coding
+Median activity duration: 35.50 minutes
+Duration / flow-proxy Pearson correlation: 0.785
+Unique event IDs: 1000
+Unique data sources: 1
+Unique applications: 16
+Unique projects: 5
