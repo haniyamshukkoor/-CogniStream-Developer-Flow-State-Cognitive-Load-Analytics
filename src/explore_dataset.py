@@ -1,238 +1,208 @@
 
 from pathlib import Path
-import pandas as pd
-import matplotlib
 
-matplotlib.use("Agg")
+import pandas as pd
 import matplotlib.pyplot as plt
+import seaborn as sns
 
 ROOT = Path(__file__).resolve().parent.parent
-INPUT_FILE = ROOT / "data" / "processed" / "cognistream_developer_activity_cleaned.csv"
+DATA_PATH = ROOT / "data" / "processed" / "cognistream_developer_activity_cleaned.csv"
 CHART_DIR = ROOT / "reports" / "charts"
-SUMMARY_FILE = ROOT / "reports" / "eda_summary.txt"
+SUMMARY_PATH = ROOT / "reports" / "eda_summary.txt"
 
 CHART_DIR.mkdir(parents=True, exist_ok=True)
 
+df = pd.read_csv(DATA_PATH)
+
+df["event_timestamp"] = pd.to_datetime(
+    df["event_timestamp"], errors="coerce"
+)
+df = df.dropna(subset=["event_timestamp"]).copy()
+
+df["event_date"] = df["event_timestamp"].dt.date
+df["event_hour"] = df["event_timestamp"].dt.hour
+df["day_of_week"] = df["event_timestamp"].dt.day_name()
+df["day_number"] = df["event_timestamp"].dt.dayofweek
+
+sns.set_theme(style="whitegrid")
+plt.rcParams["figure.figsize"] = (10, 6)
 
 def save_chart(filename):
     plt.tight_layout()
     plt.savefig(CHART_DIR / filename, dpi=150, bbox_inches="tight")
     plt.close()
-    print(f"Saved: reports/charts/{filename}")
 
+def bar_chart(data, x, y, title, xlabel, ylabel, filename,
+              horizontal=False, rotation=0):
+    plt.figure()
+    if horizontal:
+        sns.barplot(data=data, x=y, y=x)
+    else:
+        sns.barplot(data=data, x=x, y=y)
+        plt.xticks(rotation=rotation, ha="right")
+    plt.title(title)
+    plt.xlabel(xlabel)
+    plt.ylabel(ylabel)
+    save_chart(filename)
 
-def main():
-    if not INPUT_FILE.exists():
-        raise FileNotFoundError(f"Cleaned dataset not found: {INPUT_FILE}")
+# 1. Total recorded time by activity type
+activity_time = (
+    df.groupby("activity_type", dropna=False)["duration_minutes"]
+    .sum().reset_index().sort_values("duration_minutes", ascending=False)
+)
+bar_chart(activity_time, "activity_type", "duration_minutes",
+          "Total Recorded Time by Activity Type",
+          "Activity Type", "Duration (minutes)",
+          "01_time_by_activity.png", horizontal=True)
 
-    df = pd.read_csv(INPUT_FILE)
-    df["event_timestamp"] = pd.to_datetime(
-        df["event_timestamp"], errors="coerce"
-    )
+# 2. Activity distribution by team
+team_activity = (
+    df.groupby(["team", "activity_type"]).size()
+    .reset_index(name="event_count")
+)
+plt.figure(figsize=(12, 7))
+sns.barplot(data=team_activity, y="team", x="event_count",
+            hue="activity_type")
+plt.title("Recorded Activity Distribution by Team")
+plt.xlabel("Number of Events")
+plt.ylabel("Team")
+plt.legend(title="Activity", bbox_to_anchor=(1.02, 1), loc="upper left")
+save_chart("02_activity_by_team.png")
 
-    required = [
-        "event_id", "developer_id", "team", "event_timestamp",
-        "activity_type", "application", "project_name",
-        "duration_minutes", "interruption_flag",
-        "flow_state_proxy", "context_switch_flag", "data_source",
-    ]
-    missing_columns = [c for c in required if c not in df.columns]
-    if missing_columns:
-        raise ValueError(f"Missing columns: {missing_columns}")
+# 3. Duration variability by activity type
+plt.figure(figsize=(12, 6))
+sns.boxplot(data=df, x="activity_type", y="duration_minutes")
+plt.title("Duration Variability by Activity Type")
+plt.xlabel("Activity Type")
+plt.ylabel("Duration (minutes)")
+plt.xticks(rotation=35, ha="right")
+save_chart("03_duration_boxplot.png")
 
-    for column in ["duration_minutes", "flow_state_proxy"]:
-        df[column] = pd.to_numeric(df[column], errors="coerce")
+# 4. Flow-state proxy distribution
+flow_counts = (
+    df["flow_state_proxy"].value_counts(dropna=False)
+    .sort_index().rename_axis("flow_state_proxy")
+    .reset_index(name="event_count")
+)
+bar_chart(flow_counts, "flow_state_proxy", "event_count",
+          "Flow-State Proxy Distribution",
+          "Flow-State Proxy Value", "Number of Events",
+          "04_flow_proxy_distribution.png")
 
-    df["interruption_flag"] = pd.to_numeric(
-        df["interruption_flag"], errors="coerce"
-    )
-    df["context_switch_flag"] = pd.to_numeric(
-        df["context_switch_flag"], errors="coerce"
-    )
+# 5. Daily recorded event volume
+daily = (
+    df.set_index("event_timestamp").resample("D").size()
+    .rename("event_count").reset_index()
+)
+plt.figure(figsize=(12, 6))
+sns.lineplot(data=daily, x="event_timestamp", y="event_count")
+plt.title("Daily Recorded Event Volume")
+plt.xlabel("Date")
+plt.ylabel("Number of Events")
+save_chart("05_daily_event_volume.png")
 
-    findings = [
-        "COGNISTREAM — EXPLORATORY DATA ANALYSIS",
-        "=" * 45,
-        f"Rows: {len(df)}",
-        f"Columns: {len(df.columns)}",
-        f"Unique developers: {df['developer_id'].nunique()}",
-        f"Unique teams: {df['team'].nunique()}",
+# 6. Interruption rate by team
+interruption = (
+    df.groupby("team")["interruption_flag"].mean()
+    .mul(100).rename("interruption_rate_pct")
+    .reset_index().sort_values("interruption_rate_pct", ascending=False)
+)
+bar_chart(interruption, "team", "interruption_rate_pct",
+          "Interruption Rate by Team",
+          "Team", "Events with Interruption (%)",
+          "06_interruption_rate_by_team.png")
+
+# 7. Context-switch rate by activity type
+switch_rate = (
+    df.groupby("activity_type")["context_switch_flag"].mean()
+    .mul(100).rename("context_switch_rate_pct")
+    .reset_index().sort_values("context_switch_rate_pct", ascending=False)
+)
+bar_chart(switch_rate, "activity_type", "context_switch_rate_pct",
+          "Context-Switch Rate by Activity Type",
+          "Activity Type", "Events with Context Switch (%)",
+          "07_context_switch_rate.png", horizontal=True)
+
+# 8. Flow-state proxy by interruption status
+plt.figure()
+sns.countplot(data=df, x="interruption_flag", hue="flow_state_proxy")
+plt.title("Flow-State Proxy by Interruption Status")
+plt.xlabel("Interruption Flag (0 = No, 1 = Yes)")
+plt.ylabel("Number of Events")
+plt.legend(title="Flow-State Proxy")
+save_chart("08_flow_by_interruption.png")
+
+# 9. Flow-state proxy by activity type
+plt.figure(figsize=(12, 6))
+sns.barplot(data=df, x="activity_type", y="flow_state_proxy",
+            errorbar=None)
+plt.title("Mean Flow-State Proxy by Activity Type")
+plt.xlabel("Activity Type")
+plt.ylabel("Mean Flow-State Proxy")
+plt.xticks(rotation=35, ha="right")
+save_chart("09_flow_by_activity.png")
+
+# 10. Project time allocation
+project_time = (
+    df.groupby("project_name", dropna=False)["duration_minutes"]
+    .sum().reset_index().sort_values("duration_minutes", ascending=False)
+)
+bar_chart(project_time, "project_name", "duration_minutes",
+          "Recorded Time Allocation by Project",
+          "Project", "Duration (minutes)",
+          "10_project_time_allocation.png", horizontal=True)
+
+# 11. Application time allocation
+app_time = (
+    df.groupby("application", dropna=False)["duration_minutes"]
+    .sum().reset_index().sort_values("duration_minutes", ascending=False)
+)
+bar_chart(app_time, "application", "duration_minutes",
+          "Recorded Time Allocation by Application",
+          "Application", "Duration (minutes)",
+          "11_application_time_allocation.png", horizontal=True)
+
+# 12. Day-of-week and hour activity heatmap
+heatmap_data = df.pivot_table(
+    index="day_number", columns="event_hour",
+    values="event_id", aggfunc="count", fill_value=0
+).reindex(range(7), fill_value=0)
+
+heatmap_data.index = [
+    "Monday", "Tuesday", "Wednesday", "Thursday",
+    "Friday", "Saturday", "Sunday"
+]
+
+plt.figure(figsize=(14, 6))
+sns.heatmap(heatmap_data, cmap="YlGnBu", linewidths=0.2)
+plt.title("Recorded Event Volume by Day of Week and Hour")
+plt.xlabel("Hour of Day")
+plt.ylabel("Day of Week")
+save_chart("12_weekday_hour_heatmap.png")
+
+# Summary report
+with open(SUMMARY_PATH, "w", encoding="utf-8") as f:
+    f.write("COGNISTREAM EXPLORATORY DATA ANALYSIS\n")
+    f.write("=" * 40 + "\n\n")
+    f.write(f"Rows analyzed: {len(df)}\n")
+    f.write(f"Unique developers: {df['developer_id'].nunique()}\n")
+    f.write(f"Teams: {df['team'].nunique()}\n")
+    f.write(
         f"Date range: {df['event_timestamp'].min()} to "
-        f"{df['event_timestamp'].max()}",
-        "",
-        "NUMERICAL SUMMARY",
-        df[["duration_minutes", "flow_state_proxy"]].describe().to_string(),
-        "",
-        "MISSING VALUES",
-        df.isna().sum().to_string(),
-        "",
-        "CHART FINDINGS",
-    ]
-
-    def note(text):
-        findings.append(text)
-
-    # 1. Activity type counts — univariate
-    counts = df["activity_type"].value_counts()
-    counts.plot(kind="bar", figsize=(9, 5), title="Events by Activity Type")
-    plt.xlabel("Activity type")
-    plt.ylabel("Event count")
-    plt.xticks(rotation=35, ha="right")
-    save_chart("01_activity_type_distribution.png")
-    note(f"Most common activity type: {counts.index[0] if len(counts) else 'N/A'}")
-
-    # 2. Events by team — univariate
-    counts = df["team"].value_counts()
-    counts.plot(kind="bar", figsize=(8, 5), title="Events by Team")
-    plt.xlabel("Team")
-    plt.ylabel("Event count")
-    plt.xticks(rotation=30, ha="right")
-    save_chart("02_events_by_team.png")
-
-    # 3. Duration distribution — univariate
-    values = df["duration_minutes"].dropna()
-    plt.figure(figsize=(8, 5))
-    plt.hist(values, bins=20, edgecolor="black")
-    plt.title("Activity Duration Distribution")
-    plt.xlabel("Duration (minutes)")
-    plt.ylabel("Frequency")
-    save_chart("03_duration_distribution.png")
-    if len(values):
-        note(f"Median activity duration: {values.median():.2f} minutes")
-
-    # 4. Flow-state proxy distribution — univariate
-    values = df["flow_state_proxy"].dropna()
-    plt.figure(figsize=(8, 5))
-    plt.hist(values, bins=15, edgecolor="black")
-    plt.title("Flow-State Proxy Distribution")
-    plt.xlabel("Flow-state proxy value")
-    plt.ylabel("Frequency")
-    save_chart("04_flow_proxy_distribution.png")
-
-    # 5. Events over time — temporal
-    daily = (
-        df.dropna(subset=["event_timestamp"])
-        .set_index("event_timestamp")
-        .resample("D")["event_id"].count()
+        f"{df['event_timestamp'].max()}\n\n"
     )
-    plt.figure(figsize=(10, 5))
-    plt.plot(daily.index, daily.values, marker="o")
-    plt.title("Recorded Events Over Time")
-    plt.xlabel("Date")
-    plt.ylabel("Event count")
-    plt.xticks(rotation=30)
-    save_chart("05_events_over_time.png")
+    f.write("Events by activity type:\n")
+    f.write(df["activity_type"].value_counts(dropna=False).to_string())
+    f.write("\n\nEvents by team:\n")
+    f.write(df["team"].value_counts(dropna=False).to_string())
+    f.write("\n\nTotal recorded duration by activity type (minutes):\n")
+    f.write(activity_time.to_string(index=False))
+    f.write("\n\nFlow-state proxy distribution:\n")
+    f.write(df["flow_state_proxy"].value_counts(dropna=False).to_string())
+    f.write("\n\nMissing values by column:\n")
+    f.write(df.isna().sum().to_string())
+    f.write("\n")
 
-    # 6. Events by application — univariate
-    counts = df["application"].value_counts().head(15)
-    counts.sort_values().plot(kind="barh", figsize=(8, 5), title="Top Applications by Event Count")
-    plt.xlabel("Event count")
-    plt.ylabel("Application")
-    save_chart("06_events_by_application.png")
-
-    # 7. Events by project — univariate
-    counts = df["project_name"].value_counts().head(15)
-    counts.sort_values().plot(kind="barh", figsize=(8, 5), title="Top Projects by Event Count")
-    plt.xlabel("Event count")
-    plt.ylabel("Project")
-    save_chart("07_events_by_project.png")
-
-    # 8. Interruption rate by team — bivariate
-    temp = df.dropna(subset=["team", "interruption_flag"])
-    rates = temp.groupby("team")["interruption_flag"].mean() * 100
-    rates.sort_values().plot(kind="bar", figsize=(8, 5), title="Interruption Rate by Team")
-    plt.xlabel("Team")
-    plt.ylabel("Interrupted events (%)")
-    plt.xticks(rotation=30, ha="right")
-    save_chart("08_interruption_rate_by_team.png")
-
-    # 9. Context switching rate by activity type — bivariate
-    temp = df.dropna(subset=["activity_type", "context_switch_flag"])
-    rates = temp.groupby("activity_type")["context_switch_flag"].mean() * 100
-    rates.sort_values().plot(kind="bar", figsize=(9, 5), title="Context-Switch Rate by Activity")
-    plt.xlabel("Activity type")
-    plt.ylabel("Context-switch events (%)")
-    plt.xticks(rotation=35, ha="right")
-    save_chart("09_context_switch_by_activity.png")
-
-    # 10. Duration vs flow proxy — bivariate
-    temp = df.dropna(subset=["duration_minutes", "flow_state_proxy"])
-    plt.figure(figsize=(8, 5))
-    plt.scatter(temp["duration_minutes"], temp["flow_state_proxy"], alpha=0.5)
-    plt.title("Activity Duration vs Flow-State Proxy")
-    plt.xlabel("Duration (minutes)")
-    plt.ylabel("Flow-state proxy")
-    save_chart("10_duration_vs_flow_proxy.png")
-    if len(temp) >= 2:
-        corr = temp["duration_minutes"].corr(temp["flow_state_proxy"])
-        note(f"Duration / flow-proxy Pearson correlation: {corr:.3f}")
-
-    # 11. Flow proxy by activity type — bivariate
-    temp = df.dropna(subset=["activity_type", "flow_state_proxy"])
-    if not temp.empty:
-        categories = sorted(temp["activity_type"].unique())
-        box_data = [
-            temp.loc[temp["activity_type"] == category, "flow_state_proxy"]
-            for category in categories
-        ]
-        plt.figure(figsize=(10, 5))
-        plt.boxplot(box_data, tick_labels=categories)
-        plt.title("Flow-State Proxy by Activity Type")
-        plt.xlabel("Activity type")
-        plt.ylabel("Flow-state proxy")
-        plt.xticks(rotation=35, ha="right")
-        save_chart("11_flow_proxy_by_activity.png")
-
-    # 12. Activity heatmap by weekday and hour — bivariate
-    times = df.dropna(subset=["event_timestamp"]).copy()
-    times["weekday"] = times["event_timestamp"].dt.dayofweek
-    times["hour"] = times["event_timestamp"].dt.hour
-    heat = times.pivot_table(
-        index="weekday", columns="hour", values="event_id",
-        aggfunc="count", fill_value=0
-    ).reindex(index=range(7), columns=range(24), fill_value=0)
-
-    plt.figure(figsize=(12, 5))
-    plt.imshow(heat, aspect="auto", origin="lower")
-    plt.colorbar(label="Event count")
-    plt.yticks(range(7), ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"])
-    plt.xticks(range(24), range(24))
-    plt.title("Activity Heatmap by Weekday and Hour")
-    plt.xlabel("Hour of day")
-    plt.ylabel("Day of week")
-    save_chart("12_activity_weekday_hour_heatmap.png")
-
-    # Additional charts to cover identifiers/source and another relationship
-    # 13. Events by data source — univariate
-    counts = df["data_source"].value_counts()
-    counts.plot(kind="bar", figsize=(7, 5), title="Events by Data Source")
-    plt.xlabel("Data source")
-    plt.ylabel("Event count")
-    plt.xticks(rotation=20, ha="right")
-    save_chart("13_events_by_data_source.png")
-
-    # 14. Interruption vs flow proxy — bivariate
-    temp = df.dropna(subset=["interruption_flag", "flow_state_proxy"])
-    if not temp.empty:
-        grouped = temp.groupby("interruption_flag")["flow_state_proxy"].mean()
-        grouped.plot(kind="bar", figsize=(7, 5), title="Mean Flow Proxy by Interruption Flag")
-        plt.xlabel("Interruption flag (0 = no, 1 = yes if encoded that way)")
-        plt.ylabel("Mean flow-state proxy")
-        plt.xticks(rotation=0)
-        save_chart("14_flow_proxy_by_interruption.png")
-
-    # Developer ID and event ID are identifiers; summarize rather than
-    # treating them as continuous numeric measurements.
-    note(f"Unique event IDs: {df['event_id'].nunique()}")
-    note(f"Unique data sources: {df['data_source'].nunique()}")
-    note(f"Unique applications: {df['application'].nunique()}")
-    note(f"Unique projects: {df['project_name'].nunique()}")
-
-    SUMMARY_FILE.write_text("\n".join(findings) + "\n", encoding="utf-8")
-    print("\n".join(findings))
-    print(f"\nSummary saved to: {SUMMARY_FILE}")
-    print(f"Charts saved in: {CHART_DIR}")
-
-
-if __name__ == "__main__":
-    main()
+print(f"EDA complete. Charts saved to: {CHART_DIR}")
+print(f"Summary saved to: {SUMMARY_PATH}")
+print(f"Charts generated: 12")
