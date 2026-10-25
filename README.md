@@ -61,62 +61,15 @@ CogniStream/
 │   └── validate_dataset.py
 └── tests/
     └── test_dataset.py
-```
 
-## 6. Setup and Run
-
-### Install Python dependencies
-
-```bash
-python -m pip install pandas matplotlib seaborn sqlalchemy pymysql streamlit plotly
-```
-
-### Start MySQL
-
-```bash
-sudo service mysql start
-```
-
-Create the `cognistream` database and configure a MySQL user with appropriate permissions before importing the dataset.
-
-### Import the cleaned dataset
-
-Configure your MySQL connection credentials securely, then run:
-
-```bash
-python src/import_to_mysql.py
-```
-
-### Run SQL analytics
-
-```bash
-sudo mysql cognistream < sql/analytics.sql
-```
-
-### Launch the dashboard
-
-Set the `MYSQL_PASSWORD` environment variable for your configured MySQL user, then run:
-
-```bash
-python -m streamlit run app/dashboard.py --server.address 0.0.0.0
-```
-
-Open the forwarded port shown by Codespaces, usually port 8501.
-
-### Run automated tests
-
-```bash
-python -m unittest discover -s tests -v
-```
-
-## 7. Limitations
+## 6. Limitations
 
 - The dataset is synthetic and may not reflect real-world developer behavior.
 - The flow-state proxy is not a clinically or scientifically validated measurement of mental state.
 - Observed relationships do not establish causation.
 - Results should be interpreted as exploratory analytics rather than evidence of individual developer productivity.
 
-## 8. Future Improvements
+## 7. Future Improvements
 
 - Add date-range filters to the dashboard.
 - Expand context-switching and application usage analytics.
@@ -124,7 +77,22 @@ python -m unittest discover -s tests -v
 - Improve automated tests for database imports and SQL outputs.
 - Add screenshots of the dashboard.
 
-## 9. Author
+## 8. Author
 
 Maintained as a developer analytics and data engineering portfolio project.
+
+## 9. Dashboard
+
+CogniStream includes an interactive Streamlit dashboard connected to a MySQL database. It provides:
+
+- **Key Performance Indicators (KPIs):** Total activity events, developers, flow-state proxy rate, and interruption rate.
+- **Team Analysis:** Comparison of flow-state proxy rates across teams.
+- **Interruption Analysis:** Exploration of the relationship between interruptions and the flow-state proxy.
+- **Activity Trends:** Daily event volume over time.
+- **Activity Summary:** Event counts, average durations, and flow-state proxy rates by activity type.
+
+The dashboard uses Pandas for data processing and Plotly for interactive visualizations.
+
+**Important limitation:** The dataset is synthetic, and the flow-state proxy is an analytical indicator rather than a direct measurement of a developer’s mental state. Observed relationships do not establish causation.
+
 
