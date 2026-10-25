@@ -1,55 +1,130 @@
-# -CogniStream-Developer-Flow-State-Cognitive-Load-Analytics
+# CogniStream — Developer Flow-State & Cognitive Load Analytics
 
-## Project Overview
+## 1. Project Overview
 
-CogniStream is a data analytics project designed to analyze developer activity patterns, coding sessions, and potential interruptions to understand productivity and workflow efficiency. Unlike traditional productivity metrics such as lines of code written or tasks completed, this project focuses on identifying uninterrupted work periods, activity gaps, and context-switching patterns.
+CogniStream is a data analytics project that explores synthetic developer activity patterns, interruptions, context switching, and a flow-state proxy.
 
-Using real-world IDE activity log data, CogniStream transforms raw activity records into meaningful insights through data cleaning, database management, and interactive dashboard visualization.
+It uses Python, Pandas, MySQL, SQL, and Streamlit to clean, analyze, store, and visualize developer activity data.
 
-## Objectives
+**Note:** The dataset is synthetic. The flow-state proxy is an analytical indicator, not a direct measurement of a developer's mental state.
 
-- Analyze developer activity logs and coding patterns.
-- Identify uninterrupted activity sessions and estimate session durations.
-- Analyze inactivity gaps and potential context-switching patterns.
-- Clean, transform, and organize data for analysis.
-- Store and manage structured datasets efficiently.
-- Create interactive dashboards to visualize developer activity and productivity trends.
+## 2. Tech Stack
 
-## Technology Stack
+- **Python** — data processing and analytics
+- **Pandas** — data cleaning and manipulation
+- **MySQL** — relational database storage
+- **SQL** — analytical queries
+- **Streamlit** — interactive dashboard
+- **Plotly** — interactive charts
+- **Matplotlib and Seaborn** — exploratory data visualizations
+- **unittest** — automated data quality tests
 
-- **Python:** Data cleaning, preprocessing, and exploratory data analysis.
-- **Microsoft Excel:** Data inspection, basic analysis, and preliminary reporting.
-- **MySQL:** Structured data storage, querying, and analytical SQL operations.
-- **Power BI:** Interactive dashboards, KPI tracking, and data visualization.
+## 3. Dataset
 
-## Key Features
+- **Records:** 1,000 synthetic developer activity events
+- **Developers:** 20
+- **Time period:** January–December 2025
+- **Storage:** CSV files and MySQL database
 
-- Developer activity analysis based on timestamped IDE logs.
-- Coding session and activity-gap analysis.
-- Daily and session-level activity summaries.
-- KPI reporting and interactive visualizations.
-- Data-driven insights into developer work patterns.
+The dataset includes activity timestamps, teams, applications, project names, event durations, interruption flags, context-switch flags, and a flow-state proxy.
 
-## Project Workflow
+## 4. Features
 
-1. **Data Collection:** Obtain real-world IDE activity logs from a programming research dataset.
-2. **Data Cleaning:** Use Python and Excel to inspect, clean, and prepare the data.
-3. **Data Storage:** Load structured data into MySQL for efficient querying and management.
-4. **Data Analysis:** Use Python and SQL to calculate session durations, activity gaps, and developer activity metrics.
-5. **Dashboard Development:** Connect Power BI to the processed data to build interactive reports and visualizations.
+- Dataset validation and data quality reporting
+- Data cleaning and preprocessing
+- Exploratory data analysis (EDA)
+- Automated dataset quality tests
+- SQL analytics by team, activity type, interruption status, and date
+- Interactive dashboard with KPI metrics and charts
+- CSV-to-MySQL import script
 
-## Expected Outcomes
+## 5. Project Structure
 
-CogniStream aims to provide a clear understanding of developer activity patterns through measurable indicators such as active session duration, session frequency, inactivity gaps, and daily activity trends.
+```text
+CogniStream/
+├── app/
+│   └── dashboard.py
+├── data/
+│   ├── raw/
+│   └── processed/
+├── docs/
+├── reports/
+│   └── charts/
+├── sql/
+│   └── analytics.sql
+├── src/
+│   ├── analyze_findings.py
+│   ├── clean_dataset.py
+│   ├── data_quality_report.py
+│   ├── explore_dataset.py
+│   ├── import_to_mysql.py
+│   └── validate_dataset.py
+└── tests/
+    └── test_dataset.py
+```
 
-The project demonstrates an end-to-end data analytics workflow, combining Python-based data processing, Excel, MySQL database management, and Power BI dashboard development.
+## 6. Setup and Run
 
-## Project Scope and Limitations
+### Install Python dependencies
 
-The initial version focuses on IDE activity logs. Integrating GitHub, Slack, and other development tools may be considered in future enhancements.
+```bash
+python -m pip install pandas matplotlib seaborn sqlalchemy pymysql streamlit plotly
+```
 
-Inactivity gaps are indicators of activity patterns and do not necessarily represent interruptions. Cognitive load and mental focus cannot be measured directly from IDE logs alone.
+### Start MySQL
 
-## Conclusion
+```bash
+sudo service mysql start
+```
 
-CogniStream demonstrates how data analytics tools can transform raw developer activity logs into actionable workflow insights. By combining Python, Excel, MySQL, and Power BI, the project aims to support a data-driven understanding of coding sessions and developer activity patterns.
+Create the `cognistream` database and configure a MySQL user with appropriate permissions before importing the dataset.
+
+### Import the cleaned dataset
+
+Configure your MySQL connection credentials securely, then run:
+
+```bash
+python src/import_to_mysql.py
+```
+
+### Run SQL analytics
+
+```bash
+sudo mysql cognistream < sql/analytics.sql
+```
+
+### Launch the dashboard
+
+Set the `MYSQL_PASSWORD` environment variable for your configured MySQL user, then run:
+
+```bash
+python -m streamlit run app/dashboard.py --server.address 0.0.0.0
+```
+
+Open the forwarded port shown by Codespaces, usually port 8501.
+
+### Run automated tests
+
+```bash
+python -m unittest discover -s tests -v
+```
+
+## 7. Limitations
+
+- The dataset is synthetic and may not reflect real-world developer behavior.
+- The flow-state proxy is not a clinically or scientifically validated measurement of mental state.
+- Observed relationships do not establish causation.
+- Results should be interpreted as exploratory analytics rather than evidence of individual developer productivity.
+
+## 8. Future Improvements
+
+- Add date-range filters to the dashboard.
+- Expand context-switching and application usage analytics.
+- Add downloadable analytical reports.
+- Improve automated tests for database imports and SQL outputs.
+- Add screenshots of the dashboard.
+
+## 9. Author
+
+Maintained as a developer analytics and data engineering portfolio project.
+
