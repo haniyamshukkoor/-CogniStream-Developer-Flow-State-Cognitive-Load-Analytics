@@ -1,0 +1,6 @@
+project_name,total_events,total_duration_minutes,average_duration_minutes,positive_proxy_events,flow_proxy_rate,interruption_rate,context_switch_rate
+Analytics Platform,221,10324,46.71,75,33.94,12.22,1.81
+Atlas API,212,9311,43.92,68,32.08,12.74,4.72
+Data Pipeline,191,7481,39.17,51,26.7,9.95,3.14
+Customer Portal,188,8096,43.06,56,29.79,13.83,3.72
+Mobile App,188,8105,43.11,65,34.57,12.77,4.26

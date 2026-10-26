@@ -1,0 +1,9 @@
+activity_type,total_events,total_duration_minutes,average_duration_minutes,positive_proxy_events,flow_proxy_rate,interruption_rate,context_switch_rate
+coding,362,25183,69.57,269,74.31,0.0,2.49
+testing,124,3659,29.51,0,0.0,0.0,4.03
+code_review,117,3261,27.87,0,0.0,0.0,5.13
+debugging,110,4480,40.73,46,41.82,0.0,1.82
+notification,109,518,4.75,0,0.0,100.0,4.59
+meeting,70,3996,57.09,0,0.0,20.0,2.86
+documentation,58,1340,23.1,0,0.0,0.0,5.17
+break,50,880,17.6,0,0.0,0.0,6.0

@@ -1,0 +1,7 @@
+team,total_events,total_duration_minutes,average_duration_minutes,positive_proxy_events,flow_proxy_rate,interruption_rate,context_switch_rate
+Platform,209,9330,44.64,68,32.54,13.88,3.35
+Frontend,200,8892,44.46,64,32.0,12.0,4.5
+Backend,191,8238,43.13,61,31.94,11.52,3.14
+QA,151,6067,40.18,42,27.81,13.91,3.31
+Data,130,5553,42.72,42,32.31,10.77,1.54
+Analytics,119,5237,44.01,38,31.93,10.92,5.04

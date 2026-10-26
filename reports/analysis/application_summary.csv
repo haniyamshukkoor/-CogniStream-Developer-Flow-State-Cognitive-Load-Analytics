@@ -1,0 +1,17 @@
+application,total_events,total_duration_minutes,average_duration_minutes,positive_proxy_events,flow_proxy_rate,interruption_rate,context_switch_rate
+VS Code,207,10826,52.3,99,47.83,0.0,3.38
+PyCharm,175,10585,60.49,96,54.86,0.0,2.29
+IntelliJ IDEA,171,10691,62.52,120,70.18,0.0,1.75
+Microsoft Teams,65,1791,27.55,0,0.0,61.54,3.08
+GitHub,60,1747,29.12,0,0.0,0.0,5.0
+GitLab,57,1514,26.56,0,0.0,0.0,5.26
+Terminal,43,1220,28.37,0,0.0,0.0,4.65
+Slack,38,174,4.58,0,0.0,100.0,2.63
+Email,35,193,5.51,0,0.0,100.0,8.57
+Away/Idle,25,437,17.48,0,0.0,0.0,0.0
+Calendar,25,443,17.72,0,0.0,0.0,12.0
+Google Meet,22,1320,60.0,0,0.0,22.73,4.55
+Browser,21,479,22.81,0,0.0,0.0,14.29
+Confluence,19,406,21.37,0,0.0,0.0,0.0
+Zoom,19,1036,54.53,0,0.0,26.32,0.0
+Notion,18,455,25.28,0,0.0,0.0,0.0
